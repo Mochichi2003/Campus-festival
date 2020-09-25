@@ -24,10 +24,11 @@ module.exports = {
       1,
       { extensions: [".js", ".jsx", ".tsx"] },
     ], // should add ".ts" if typescript project
-
+    "no-use-before-define": ["off", { functions: true, classes: true }],
     "prettier/prettier": [
       "error",
       {
+        jsxBracketSameLine: true,
         singleQuote: false,
         trailingComma: "es5",
       },
