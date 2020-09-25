@@ -20,14 +20,17 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     <Header />
     {/* </header> */}
     <Container>{children}</Container>
-    
+
     <footer>
-    <Container>
-      
-      <h1>わ</h1>
       <hr />
-      <span>I&lsquo;m here to stay (Footer)</span>
-    </Container>
+      <Container>
+        <p>
+          made by&nbsp;
+          <span>
+            <a href="https://github.com/Mochichi2003">Mochi</a>
+          </span>
+        </p>
+      </Container>
     </footer>
   </div>
 );
