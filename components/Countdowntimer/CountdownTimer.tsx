@@ -3,26 +3,30 @@ import React from "react";
 import styles from "./CountdownTimer.module.sass";
 import moment from "moment";
 moment().locale("ja");
-
-class Clock extends React.Component {
-  constructor(props: string) {
+class RemainingTime extends React.Component {
+  constructor(props: any) {
     super(props);
-    this.state = { date: moment().format("D日 HH時間 M分 s秒") };
+    this.state = {
+      timer: moment().format("YYYY-MM-DD HH:mm:ss"),
+    };
   }
 
+  // date: string = moment().format("YYYY-MM-DD");
   render() {
-    return <>{this.state.date}</>;
+    return (
+      <>
+        <p>残り20日23時間23分12秒</p>
+      </>
+    );
   }
 }
-
 export default function header() {
   return (
     <div className={styles.main}>
       <div className={styles.mainText}>
         <h1>まもなく始まります</h1>
         <h2>
-          残り
-          <Clock />
+          <RemainingTime />
         </h2>
       </div>
     </div>
