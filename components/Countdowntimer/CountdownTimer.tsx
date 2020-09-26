@@ -3,7 +3,9 @@ import React from "react";
 import styles from "./CountdownTimer.module.sass";
 // import moment from "moment";
 import dayjs from "dayjs";
+import 'dayjs/locale/ja';
 
+dayjs.locale('ja');
 // moment().locale("ja");
 class RemainingTime extends React.Component {
   // TODO  カウントダウンを表示するようにする
@@ -17,7 +19,7 @@ class RemainingTime extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    this.timerID = setInterval(() => this.tick(), 100);
   }
 
   componentWillUnmount() {
@@ -26,7 +28,7 @@ class RemainingTime extends React.Component {
 
   tick() {
     this.setState({
-      date: dayjs().format("残り DD日 hh時間mm分ss秒"),
+      time: this.nowtime(),
     });
   }
 
