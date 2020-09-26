@@ -3,13 +3,22 @@ import React from "react";
 import styles from "./CountdownTimer.module.sass";
 // import moment from "moment";
 import dayjs from "dayjs";
-import 'dayjs/locale/ja';
+import "dayjs/locale/ja";
 
-dayjs.locale('ja');
+import Debug from "debug";
+const debug = Debug("dev:time");
+
+dayjs.locale("ja");
 // moment().locale("ja");
 class RemainingTime extends React.Component {
   // TODO  カウントダウンを表示するようにする
   nowtime(): string {
+    this.eventDate = dayjs(
+      "2020-11-29 00:00:00.000",
+      "YYYY-MM-DD HH:mm:ss.SSS"
+    );
+
+    debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
     return dayjs().format("残り DD日 hh時間mm分ss秒");
   }
 
