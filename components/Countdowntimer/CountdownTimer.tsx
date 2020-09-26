@@ -19,7 +19,16 @@ class RemainingTime extends React.Component {
     );
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
-    return dayjs().format("残り DD日 hh時間mm分ss秒");
+    return (
+      Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
+      "日" +
+      Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
+      "時間" +
+      Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
+      "分" +
+      Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
+      "秒後"
+    );
   }
 
   constructor(props: any) {
@@ -54,7 +63,7 @@ export default function header() {
   return (
     <div className={styles.main}>
       <div className={styles.mainText}>
-        <h1>まもなく始まります</h1>
+        <h1>幕が上がります</h1>
         <h2>
           <RemainingTime />
         </h2>
