@@ -23,7 +23,8 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
       <meta property="og:url" content="https://campus-festival.vercel.app/" />
       <meta
         property="og:title"
-        content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+        // content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+        content="No title"
       />
       <meta name="twitter:description" content="No body" />
       <meta
