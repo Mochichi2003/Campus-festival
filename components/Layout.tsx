@@ -17,7 +17,20 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
       <title>{title + " ＿ N高横浜キャンパスフェスティバルWebページ"}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="description" content="No body" />
+      <meta property="og:url" content="https://campus-festival.vercel.app/" />
+      <meta property="og:title" content="No title" />
+
+      <meta property="og:image" content="画像のURL" />
+      <meta name="twitter:card" content="カード種類" />
+      <meta name="twitter:site" content="@Twitterユーザー名" />
+      <meta property="og:site_name" content="サイト名" />
+      <meta property="og:locale" content="ja_JP" />
+      <meta property="fb:app_id" content="appIDを入力" />
       <link rel="icon" href="icon/スクリーンショット 164.png" />
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
     </Head>
     {/* <header> */}
     {(() => {
