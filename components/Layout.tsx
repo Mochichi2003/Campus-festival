@@ -22,13 +22,16 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
       <meta name="description" content="No body" />
       <meta property="og:url" content="https://campus-festival.vercel.app/" />
       <meta property="og:title" content="No title" />
-
-      <meta property="og:image" content="画像のURL" />
-      <meta name="twitter:card" content="カード種類" />
-      <meta name="twitter:site" content="@Twitterユーザー名" />
-      <meta property="og:site_name" content="サイト名" />
+      <meta name="twitter:description" content="No body" />
+      <meta
+        property="og:image"
+        content="https://campus-festival.vercel.app/ogp/OGP-Notitle.png"
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@mochi_749" />
+      <meta property="og:site_name" content="No title" />
       <meta property="og:locale" content="ja_JP" />
-      <meta property="fb:app_id" content="appIDを入力" />
+
       <link rel="icon" href="icon/スクリーンショット 164.png" />
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
     </Head>
