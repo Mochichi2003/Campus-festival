@@ -5,7 +5,7 @@ import React from "react";
 
 const IndexPage = () => (
   <Layout
-    title="Home | Next.js + TypeScript Example"
+    title="Home"
     // NotShowHederAndFooter="true"
   >
     <h1>HEY 👋</h1>
