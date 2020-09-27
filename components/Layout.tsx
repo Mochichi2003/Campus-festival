@@ -14,7 +14,7 @@ type Props = {
 const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
   <div>
     <Head>
-      <title>{title + " | N高横浜キャンパスフェスティバル"}</title>
+      <title>{title + " ＿ N高横浜キャンパスフェスティバルWebページ"}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="icon" href="icon/スクリーンショット 164.png" />
