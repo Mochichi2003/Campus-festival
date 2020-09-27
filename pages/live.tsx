@@ -4,11 +4,12 @@
 import React from "react";
 // import styles from "../style/live.module.sass";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
+import Layout from "../components/Layout";
 
 const Live = () => (
-  <div>
+  <Layout title="ライブページ" NotShowHederAndFooter="true">
     <CountdownTimer />
-  </div>
+  </Layout>
 );
 
 export default Live;
