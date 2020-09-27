@@ -21,7 +21,7 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta name="description" content="No body" />
       <meta property="og:url" content="https://campus-festival.vercel.app/" />
-      <meta property="og:title" content="No title" />
+      <meta property="og:title" content={title} />
       <meta name="twitter:description" content="No body" />
       <meta
         property="og:image"
