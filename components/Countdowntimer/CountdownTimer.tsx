@@ -12,6 +12,11 @@ dayjs.locale("ja");
 // moment().locale("ja");
 class RemainingTime extends React.Component {
   // TODO  カウントダウンを表示するようにする
+  eventDate: any;
+  timerID: any;
+  time: any;
+  state: any;
+
   nowtime(): any {
     this.eventDate = dayjs(
       "2020-11-29 00:00:00.000",
