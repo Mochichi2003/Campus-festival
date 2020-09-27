@@ -14,14 +14,17 @@ type Props = {
 const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
   <div>
     <Head>
-      <title>{title + " ＿ N高横浜キャンパスフェスティバルWebページ"}</title>
+      <title>{title + "| N高横浜キャンパスフェスティバルWebページ"}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta name="description" content="No body" />
       <meta property="og:url" content="https://campus-festival.vercel.app/" />
-      <meta property="og:title" content={title} />
+      <meta
+        property="og:title"
+        content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+      />
       <meta name="twitter:description" content="No body" />
       <meta
         property="og:image"
