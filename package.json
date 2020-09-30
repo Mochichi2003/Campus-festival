@@ -17,6 +17,7 @@
     "debug": "^4.2.0",
     "dotenv": "^8.2.0",
     "gray-matter": "^4.0.2",
+    "highlightjs": "^9.16.2",
     "next": "latest",
     "raw-loader": "^4.0.1",
     "react": "^16.12.0",
