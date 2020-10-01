@@ -14,7 +14,7 @@ type Props = {
 const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
   <div>
     <Head>
-      <title>{title + "| N高横浜キャンパスフェスティバルWebページ"}</title>
+      <title>{title + " - N高横浜キャンパスフェスティバルWebページ"}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,10 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
       <meta name="twitter:site" content="@mochi_749" />
       <meta property="og:site_name" content="No title" />
       <meta property="og:locale" content="ja_JP" />
-
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
       <link rel="icon" href="icon/スクリーンショット 164.png" />
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
     </Head>

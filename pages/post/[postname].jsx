@@ -1,22 +1,29 @@
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-
+import Head from "next/head";
 import Layout from "../../components/Layout";
+// import "github-markdown-css";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-      <Link href="/">
+    <Layout title={`${siteTitle} | ${frontmatter.title}`}>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css"
+        />
+      </Head>
+      <Link href="/postdatas">
         <a>Back to post list</a>
       </Link>
       <article>
         <h1>{frontmatter.title}</h1>
         <p>By {frontmatter.author}</p>
         <div>
-          <ReactMarkdown source={markdownBody} />
+          <ReactMarkdown className="markdown-body" source={markdownBody} />
         </div>
       </article>
     </Layout>

@@ -1,5 +1,5 @@
 ---
-title: "asdffffffff, world!"
+title: "テストの投稿だよ"
 author: "Cassidy"
 ---
 
