@@ -59,7 +59,9 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
         // return <span>Good morning</span>;
         return <>{children}</>;
       } else {
-        return <Container>{children}</Container>;
+        return (
+          <Container className={styles.main_contents}>{children}</Container>
+        );
       }
     })()}
 

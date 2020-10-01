@@ -1,20 +1,28 @@
 import Link from "next/link";
+import Style from "./style/PostList.module.sass";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
 
   return (
     <div>
-      {!posts && <div>No posts!</div>}
-      <ul>
+      <h1> ここはN高横浜キャンパスの生徒が作った作品を展示するところです</h1>
+      {!posts && <div>何もありません！</div>}
+      <ul className={Style.postlistview}>
         {posts &&
           posts.map((post) => {
             return (
-              <li key={post.slug}>
+              <div className={Style.PostList} key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
-                  <a>{post.frontmatter.title}</a>
+                  <div>
+                    <a>
+                      <h2>{post.frontmatter.title}</h2>
+                    </a>
+                    <p>{post.frontmatter.author}が書きました</p>
+                  </div>
                 </Link>
-              </li>
+                {/* <hr /> */}
+              </div>
             );
           })}
       </ul>

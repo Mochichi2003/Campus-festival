@@ -8,9 +8,9 @@ const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout title={title}>
       <h1 className="title">
-        ここはN高横浜キャンパスの生徒が作った作品を展示するところです
+        {/* ここはN高横浜キャンパスの生徒が作った作品を展示するところです */}
       </h1>
-      <p className="description">{description}</p>
+      {/* <p className="description">{description}</p> */}
       <main>
         <PostList posts={posts} />
       </main>
