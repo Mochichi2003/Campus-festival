@@ -10,10 +10,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   return (
     <Layout title={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css"
-        />
+        /> */}
       </Head>
       <Link href="/postdatas">
         <a>Back to post list</a>
@@ -21,8 +21,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       <article>
         <h1>{frontmatter.title}</h1>
         <p>By {frontmatter.author}</p>
-        <div className={style.markdown-body}>
-          <ReactMarkdown className="markdown-body" source={markdownBody} />
+        <div className={style.markdown_body}>
+          <ReactMarkdown source={markdownBody} />
         </div>
       </article>
     </Layout>
