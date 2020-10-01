@@ -7,7 +7,9 @@ import matter from "gray-matter";
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout title={title}>
-      <h1 className="title">Welcome to my blog!</h1>
+      <h1 className="title">
+        ここはN高横浜キャンパスの生徒が作った作品を展示するところです
+      </h1>
       <p className="description">{description}</p>
       <main>
         <PostList posts={posts} />
