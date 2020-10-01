@@ -1,9 +1,10 @@
 ---
-title: "テストの投稿だよ"
-author: "Cassidy"
+title: "たいとる"
+author: "Mochi"
+url: "https://github.com/Mochichi2003"
 ---
 
-# h1 Heading 8-)
+# h1 Heading 
 
 ## h2 Heading
 

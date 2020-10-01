@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import Head from "next/head";
 import Header from "./header";
 import { Container } from "react-bootstrap";
+import styles from "./style/Layout.module.sass";
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -68,15 +69,16 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
         return <span></span>;
       } else {
         return (
-          <footer>
+          <footer className={styles.fotter}>
             <hr />
             <Container>
-              <p>
-                made by&nbsp;
+              <small>
+                このサイトは&nbsp;
                 <span>
                   <a href="https://github.com/Mochichi2003">Mochi</a>
                 </span>
-              </p>
+                が作りました
+              </small>
             </Container>
           </footer>
         );
