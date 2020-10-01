@@ -1,27 +1,35 @@
-import Link from "next/link";
+// import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import style from "../../style/markdown.module.css";
+import MarkdownStyle from "../../style/markdown.module.css";
+import styles from "../../style/posts/[postname].module.sass";
+
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout title={`${siteTitle} | ${frontmatter.title}`}>
+    <Layout title={`${siteTitle} `}>
       <Head>
         {/* <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css"
         /> */}
       </Head>
-      <Link href="/postdatas">
+      {/* <Link href="/postdatas">
         <a>Back to post list</a>
-      </Link>
-      <article>
-        <h1>{frontmatter.title}</h1>
-        <p>By {frontmatter.author}</p>
-        <div className={style.markdown_body}>
+      </Link> */}
+      <article className={styles.content}>
+        <h1 className={styles.title}>{frontmatter.title}</h1>
+        <p className={styles.postname}>
+          <span>
+            <a href={frontmatter.url}>{frontmatter.author}</a>
+          </span>
+          が書きました
+        </p>
+        <hr className={styles.hr} />
+        <div className={MarkdownStyle.markdown_body}>
           <ReactMarkdown source={markdownBody} />
         </div>
       </article>
