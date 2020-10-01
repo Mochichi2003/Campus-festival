@@ -1,4 +1,4 @@
-import Layout from "../components/Layout-markdown";
+import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import matter from "gray-matter";
 
@@ -6,7 +6,7 @@ import matter from "gray-matter";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
-    <Layout pageTitle={title}>
+    <Layout title={title}>
       <h1 className="title">Welcome to my blog!</h1>
       <p className="description">{description}</p>
       <main>
