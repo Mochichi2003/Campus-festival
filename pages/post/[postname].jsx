@@ -20,7 +20,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       </Head>
       <div className={styles.back_to_home}>
         <Link href="/postdatas">
-          <Button>← 一覧に戻る</Button>
+          <div className={styles.backbutton}>
+            <Button variant="link">一覧に戻る</Button>
+            {/* <p>← 一覧に戻るaaaaaaaaa</p> */}
+          </div>
         </Link>
       </div>
 
