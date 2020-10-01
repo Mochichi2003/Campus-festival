@@ -9,7 +9,7 @@ const IndexPage = () => (
     // NotShowHederAndFooter="true"
   >
     <h1>HEY 👋</h1>
-    <Link href="./postdatas">postdatas</Link>
+    <Link href="./postdatas">展示物一覧</Link>
   </Layout>
 );
 

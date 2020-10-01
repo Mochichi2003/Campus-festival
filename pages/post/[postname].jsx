@@ -1,10 +1,11 @@
-// import Link from "next/link";
+import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import MarkdownStyle from "../../style/markdown.module.css";
 import styles from "../../style/posts/[postname].module.sass";
+import { Button } from "react-bootstrap";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
@@ -17,9 +18,12 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css"
         /> */}
       </Head>
-      {/* <Link href="/postdatas">
-        <a>Back to post list</a>
-      </Link> */}
+      <div className={styles.back_to_home}>
+        <Link href="/postdatas">
+          <Button>← 一覧に戻る</Button>
+        </Link>
+      </div>
+
       <article className={styles.content}>
         <h1 className={styles.title}>{frontmatter.title}</h1>
         <p className={styles.postname}>
