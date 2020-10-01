@@ -3,8 +3,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-// import "github-markdown-css";
-
+import style from "../../style/markdown.module.css";
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
@@ -22,7 +21,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       <article>
         <h1>{frontmatter.title}</h1>
         <p>By {frontmatter.author}</p>
-        <div>
+        <div className={style.markdown-body}>
           <ReactMarkdown className="markdown-body" source={markdownBody} />
         </div>
       </article>
