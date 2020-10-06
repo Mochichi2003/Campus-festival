@@ -71,18 +71,18 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
         return <span></span>;
       } else {
         return (
-          <footer className={styles.fotter}>
+          <div>
             <hr />
-            <Container>
+            <footer className={styles.fotter}>
               <small>
                 このサイトは&nbsp;
-                <span>
+                <span className="text-blue-700">
                   <a href="https://github.com/Mochichi2003">Mochi</a>
                 </span>
                 が作りました
               </small>
-            </Container>
-          </footer>
+            </footer>
+          </div>
         );
       }
     })()}
