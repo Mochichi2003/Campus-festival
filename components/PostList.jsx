@@ -12,15 +12,21 @@ export default function PostList({ posts }) {
         {posts &&
           posts.map((post) => {
             return (
-              <div className={Style.PostList} key={post.slug}>
+              <div
+                className={
+                  Style.PostList + " border-solid border-2 border-gray-300 "
+                }
+                key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
                   <div>
                     <a>
-                      <h2 className="text-5xl font-semibold">
+                      <h2 className=" md:text-3xl font-semibold">
                         {post.frontmatter.title}
                       </h2>
                     </a>
-                    <p>{post.frontmatter.author}が書きました</p>
+                    <p className="text-gray-500">
+                      {post.frontmatter.author}が書きました
+                    </p>
                   </div>
                 </Link>
                 {/* <hr /> */}
