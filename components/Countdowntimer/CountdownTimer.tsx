@@ -68,8 +68,8 @@ export default function header() {
   return (
     <div className={styles.main}>
       <div className={styles.mainText}>
-        <h1>まもなく始まります</h1>
-        <h2>
+        <h1 className="text-5xl font-semibold ">まもなく始まります</h1>
+        <h2 className="text-4xl font-semibold ">
           <RemainingTime />
         </h2>
       </div>
