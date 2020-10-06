@@ -20,11 +20,11 @@ export default function PostList({ posts }) {
                 <Link href={{ pathname: `/post/${post.slug}` }}>
                   <div>
                     <a>
-                      <h2 className=" md:text-3xl font-semibold">
+                      <h2 className=" md:text-3xl  font-medium">
                         {post.frontmatter.title}
                       </h2>
                     </a>
-                    <p className="text-gray-500">
+                    <p className="text-gray-500 pt-1">
                       {post.frontmatter.author}が書きました
                     </p>
                   </div>

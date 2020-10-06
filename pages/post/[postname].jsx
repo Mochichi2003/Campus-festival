@@ -11,29 +11,24 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout title={`${siteTitle} `}>
+    <Layout title={`${frontmatter.title || "No title"} `}>
       <Head>
         {/* <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/github-markdown-css@3.0.1/github-markdown.min.css"
         /> */}
       </Head>
-      <div className={styles.back_to_home}>
-        <Link href="/postdatas">
-          <div className={styles.backbutton}>
-            <Button variant="link">一覧に戻る</Button>
-            {/* <p>← 一覧に戻るaaaaaaaaa</p> */}
-          </div>
-        </Link>
-      </div>
 
-      <article className={styles.content}>
-        <h1 className={styles.title}>{frontmatter.title}</h1>
-        <p className={styles.postname}>
+
+      <article className={styles.content + " mb-5"}>
+        {/* Markdownのかいたやつのタイトルが入るところ */}
+        <h1 className={styles.title + " text-4xl"}>{frontmatter.title}</h1>
+        <p className={styles.postname + " my-2"}>
           <span>
+            {/* Markdownのかいたやつの本文が入るところ */}
             <a href={frontmatter.url}>{frontmatter.author}</a>
           </span>
-          が書きました
+          さんが書きました
         </p>
         <hr className={styles.hr} />
         <div className={MarkdownStyle.markdown_body}>
