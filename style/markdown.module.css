@@ -295,6 +295,7 @@
   margin-top: 0;
 }
 .markdown_body blockquote {
+
   margin: 0;
 }
 .markdown_body ol,
@@ -440,6 +441,7 @@
 }
 .markdown_body blockquote {
   border-left: 0.25em solid #dfe2e5;
+  /* background-color: #dbdbdb15; */
   color: #6a737d;
   padding: 0 1em;
 }
