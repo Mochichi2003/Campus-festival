@@ -1,5 +1,5 @@
 ---
-title: "たいとる"
+title: "たいとる5_"
 author: "Mochi"
 url: "https://github.com/Mochichi2003"
 ---
