@@ -6,7 +6,11 @@ export default function PostList({ posts }) {
 
   return (
     <div>
-      <h1> ここはN高横浜キャンパスの生徒が作った作品を展示するところです</h1>
+      <h1 className="text-3xl font-semibold my-6 md:text-5xl">
+        {" "}
+        ここはN高横浜キャンパスの生徒が作った作品を展示するところです
+      </h1>
+      <hr />
       {!posts && <div>何もありません！</div>}
       <ul className={Style.postlistview}>
         {posts &&
@@ -14,7 +18,8 @@ export default function PostList({ posts }) {
             return (
               <div
                 className={
-                  Style.PostList + " border-solid border-2 border-gray-300 "
+                  Style.PostList +
+                  " sm:p-24 border-solid border-2 border-gray-300 p-3  "
                 }
                 key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>

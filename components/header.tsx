@@ -12,24 +12,24 @@ export default function header() {
           // styles.header_background +
           " flex items-center fixed w-screen flex-row  p-2 bg-gray-800"
         }>
-        <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center text-xl px-3 py-0 m-1">
+        <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center text-sm md:text-xl px-2  py-0 m-1">
           <Link href="/">
             <p className="font-medium">横浜CPキャンフェス</p>
           </Link>
         </div>
-        <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center text-lg px-3 py-0 m-1">
+        <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center text-sm md:text-lg px-2  py-0 m-1">
           <Link href="/live">
             <p>live</p>
           </Link>
         </div>
-        <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center text-lg px-3 py-0 m-1">
+        <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center text-sm md:text-lg px-2  py-0 m-1">
           <Link href="/postdatas">
             <p>postdatas</p>
           </Link>
         </div>
       </nav>
 
-      <div className={styles.header_margin}>.</div>
+      <div className={styles.header_margin + " h-64 w-screen"}></div>
     </>
   );
 }
