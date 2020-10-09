@@ -3,7 +3,16 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    "./components/**/*.jsx",
+    "./pages/**/*.jsx",
+    "./components/**/*.tsx",
+    "./pages/**/*.tsx",
+    "./components/**/*.ts",
+    "./pages/**/*.ts",
+    "./components/**/*.js",
+    "./pages/**/*.js",
+  ],
   theme: {
     extend: {
       opacity: {
