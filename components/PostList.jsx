@@ -29,7 +29,7 @@ export default function PostList({ posts }) {
                         {post.frontmatter.title}
                       </h2>
                     </a>
-                    <p className="text-gray-500 pt-1">
+                    <p className="text-gray-900 pt-1">
                       {post.frontmatter.author}が書きました
                     </p>
                   </div>

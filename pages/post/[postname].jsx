@@ -1,11 +1,11 @@
-import Link from "next/link";
+// import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import MarkdownStyle from "../../style/markdown.module.css";
 import styles from "../../style/posts/[postname].module.sass";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;

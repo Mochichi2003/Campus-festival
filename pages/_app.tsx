@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/global.css";
 import Router from "next/router";
 

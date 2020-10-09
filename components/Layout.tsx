@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 // import Link from "next/link";
 import Head from "next/head";
 import Header from "./header";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import styles from "./style/Layout.module.sass";
 type Props = {
   children?: ReactNode;
@@ -40,7 +40,7 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
       />
-      <link rel="icon" href="icon/スクリーンショット 164.png" />
+      <link rel="icon" href="icon/icon.png" />
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
     </Head>
     {/* <header> */}
@@ -60,7 +60,9 @@ const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
         return <>{children}</>;
       } else {
         return (
-          <Container className={styles.main_contents}>{children}</Container>
+          <div className={styles.main_contents + " m-auto	 justify-center"}>
+            {children}
+          </div>
         );
       }
     })()}
