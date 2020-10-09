@@ -19,7 +19,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         /> */}
       </Head>
 
-
       <article className={styles.content + " mb-5"}>
         {/* Markdownのかいたやつのタイトルが入るところ */}
         <h1 className={styles.title + " text-4xl"}>{frontmatter.title}</h1>
