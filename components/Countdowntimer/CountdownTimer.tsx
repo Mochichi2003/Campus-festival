@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
+import Link from "next/link";
 const debug = Debug("dev:time");
 
 dayjs.locale("ja");
@@ -67,6 +68,11 @@ class RemainingTime extends React.Component {
 export default function header() {
   return (
     <div className={styles.main}>
+      <div className="text-lg p-3">
+        <Link href="/">
+          <a className=" duration-150 text-gray-200">戻る</a>
+        </Link>
+      </div>
       <div className={styles.mainText}>
         <h1 className="text-5xl font-semibold ">まもなく始まります</h1>
         <h2 className="text-4xl font-semibold ">
