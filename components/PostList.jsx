@@ -19,7 +19,7 @@ export default function PostList({ posts }) {
               <div
                 className={
                   Style.PostList +
-                  " p-3 sm:p-4 border-solid border rounded border-gray-300   "
+                  " p-3 sm:p-4  border-solid border rounded border-gray-300   "
                 }
                 key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
