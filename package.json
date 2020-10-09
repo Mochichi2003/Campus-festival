@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "server": " next build && next start",
     "deploy": "npm run build && npm run export",
     "type-check": "tsc",
     "lint": "eslint --fix --ext .js,.jsx,.scss,.sass,.ts,.tsx,.css  ."
@@ -53,6 +54,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.2",
     "tailwindcss": "^1.8.10",
