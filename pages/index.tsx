@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
+import style from "../style/index.module.sass";
 import React from "react";
 
 const IndexPage = () => (
@@ -8,8 +9,15 @@ const IndexPage = () => (
     title="Home"
     // NotShowHederAndFooter="true"
   >
-    <h1 className="text-3xl sm:text-6xl font-sans text-center	 font-bold">
-      🔔🌰
+    <h1
+      className={
+        style.topicon +
+        " text-3xl sm:text-6xl font-sans text-center mt-8 mb-32 font-bold"
+      }
+    >
+      <pre>
+        <code>🔥( ᐛ)&lt;トップページ🔥</code>
+      </pre>
     </h1>
     <div className="my-2 text-lg text-center	">
       <Link href="./postdatas">
