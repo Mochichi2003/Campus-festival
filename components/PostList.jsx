@@ -22,7 +22,7 @@ export default function PostList({ posts }) {
                 <Link href={{ pathname: `/post/${post.slug}` }}>
                   <div>
                     {" "}
-                    <div className="  border-solid border rounded border-gray-300 flex">
+                    <div className="  border-solid border rounded border-gray-300  flex">
                       <div className=" text-gray-700 text-center   ">
                         {(() => {
                           if (post.frontmatter.img) {
@@ -33,7 +33,7 @@ export default function PostList({ posts }) {
                                 alt="アイコン画像"
                                 className={
                                   Style.postlisticonimg +
-                                  " translate-x-1/2 translate-y-1/2   border"
+                                  " translate-x-1/2 translate-y-1/2 border-gray-800 border m-2 rounded"
                                 }
                                 style={{}}
                               />
@@ -48,7 +48,8 @@ export default function PostList({ posts }) {
                           </h2>
                         </a>
                         <p className="text-gray-900 pt-1">
-                          {post.frontmatter.author}が書きました
+                          {post.frontmatter.author}
+                          が書きました
                         </p>
                       </div>
                     </div>
