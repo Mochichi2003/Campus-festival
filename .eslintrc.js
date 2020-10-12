@@ -30,7 +30,7 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        jsxBracketSameLine: true,
+        jsxBracketSameLine: false,
         singleQuote: false,
         trailingComma: "es5",
         useTabs: false,

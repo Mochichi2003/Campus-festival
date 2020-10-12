@@ -1,5 +1,6 @@
 ---
 title : "2020/10/09の講演会講演会"
+img: "https://i.imgur.com/xK22lFP.png"
 ---
 1. あかさたな
 1. 2番め

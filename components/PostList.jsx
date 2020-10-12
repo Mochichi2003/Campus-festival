@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Style from "./style/PostList.module.sass";
+// import showpostsimg from "./ShowPostsImg";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
@@ -13,25 +14,44 @@ export default function PostList({ posts }) {
       <hr />
       {!posts && <div>何もありません！</div>}
       <ul className={Style.postlistview}>
+        {/* <div>{JSON.stringify(posts)}</div> */}
         {posts &&
           posts.map((post) => {
             return (
-              <div
-                className={
-                  Style.PostList +
-                  " p-3 sm:p-4  border-solid border rounded border-gray-300   "
-                }
-                key={post.slug}>
+              <div className={Style.PostList + "    "} key={post.slug}>
                 <Link href={{ pathname: `/post/${post.slug}` }}>
                   <div>
-                    <a>
-                      <h2 className=" md:text-3xl  font-medium">
-                        {post.frontmatter.title}
-                      </h2>
-                    </a>
-                    <p className="text-gray-900 pt-1">
-                      {post.frontmatter.author}が書きました
-                    </p>
+                    {" "}
+                    <div className="  border-solid border rounded border-gray-300 flex">
+                      <div className=" text-gray-700 text-center   ">
+                        {(() => {
+                          if (post.frontmatter.img) {
+                            // return <span>Good morning</span>;
+                            return (
+                              <img
+                                src={post.frontmatter.img}
+                                alt="アイコン画像"
+                                className={
+                                  Style.postlisticonimg +
+                                  " translate-x-1/2 translate-y-1/2   border"
+                                }
+                                style={{}}
+                              />
+                            );
+                          }
+                        })()}
+                      </div>
+                      <div className="p-3 sm:p-4 px-4 py-2">
+                        <a>
+                          <h2 className=" md:text-3xl  font-medium">
+                            {post.frontmatter.title}
+                          </h2>
+                        </a>
+                        <p className="text-gray-900 pt-1">
+                          {post.frontmatter.author}が書きました
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </Link>
                 {/* <hr /> */}

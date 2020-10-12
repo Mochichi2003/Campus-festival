@@ -1,6 +1,6 @@
 module.exports = {
   future: {
-    // removeDeprecatedGapUtilities: true,
+    removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
   purge: [
@@ -14,6 +14,18 @@ module.exports = {
     "./pages/**/*.js",
   ],
   theme: {
+    maxWidth: {
+      1: "1rem",
+      2: "2rem",
+      3: "3rem",
+      4: "4rem",
+      5: "5rem",
+      6: "6rem",
+      7: "7rem",
+      8: "8rem",
+      9: "9rem",
+      10: "10rem",
+    },
     screens: {
       sss: "400px",
       sm: "640px",

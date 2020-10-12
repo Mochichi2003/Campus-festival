@@ -5,14 +5,15 @@ import styles from "./style/header.module.sass";
 import Link from "next/link";
 export default function header() {
   return (
-    <>
+    <div className="sticky top-0 left-0">
       {/* <nav className="flex items-center fixed w-screen	 flex-row bg-blue-600 p-2 "> */}
       <nav
         style={{}}
         className={
           styles.header_background +
-          " flex items-center fixed w-screen flex-row  p-2 bg-gray-900 bg-opacity-95"
-        }>
+          " flex items-center  w-screen flex-row  p-2 bg-gray-900 bg-opacity-95"
+        }
+      >
         <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center text-sm md:text-xl px-2  py-0 m-1">
           <Link href="/">
             <p className="font-medium">横浜CPキャンフェス</p>
@@ -30,7 +31,7 @@ export default function header() {
         </div>
       </nav>
 
-      <div className={styles.header_margin + " h-64 w-screen"}></div>
-    </>
+      {/* <div className={styles.header_margin + " h-64 w-screen"}></div> */}
+    </div>
   );
 }
