@@ -33,7 +33,7 @@ export default function PostList({ posts }) {
                                 alt="アイコン画像"
                                 className={
                                   Style.postlisticonimg +
-                                  " translate-x-1/2 translate-y-1/2 border-gray-800 border m-2 rounded"
+                                  " translate-x-1/2 translate-y-1/2 border-gray-300 border m-2 rounded"
                                 }
                                 style={{}}
                               />

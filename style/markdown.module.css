@@ -593,7 +593,7 @@
 }
 .markdown_body .highlight pre,
 .markdown_body pre {
-  background-color: #f6f8fa;
+  /* background-color: #f6f8fa; */
   border-radius: 3px;
   font-size: 85%;
   line-height: 1.45;
@@ -797,5 +797,5 @@
 /* 自分で追加したやつ */
 
 .markdown_body pre {
-  /* background: #ececec; */
+  background: #282a36;
 }
