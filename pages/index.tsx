@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
-import style from "../style/index.module.sass";
+// import style from "../style/index.module.sass";
 import React from "react";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Head from "next/head";
