@@ -31,6 +31,16 @@ const IndexPage = () => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
+        <iframe
+          width="1206"
+          height="678"
+          className="text-center m-auto w-full h-full"
+          src="https://www.youtube.com/embed/zCLOJ9j1k2Y"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
         <Link href="./postdatas">
           <a className="text-blue-500 no-underline hover:underline ">
             展示物一覧
