@@ -11,6 +11,7 @@ type Props = {
   showHeader?: boolean;
   showFotter?: boolean;
   HasHeaderMargin?: boolean;
+  useHead?: boolean; // Titleテキストを使うか使わないか
 };
 
 // class hederAndFooterAndContainer extends React.Component {}
@@ -18,41 +19,63 @@ type Props = {
 const Layout = ({
   children,
   title,
+  useHead,
   NotShowHederAndFooter,
   showHeader,
   showFotter,
   HasHeaderMargin,
 }: Props) => (
   <div>
-    <Head>
-      <title>{title + " - N高横浜キャンパスフェスティバルWebページ"}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <meta name="description" content="No body" />
-      <meta property="og:url" content="https://campus-festival.vercel.app/" />
-      <meta
-        property="og:title"
-        // content={title + "| N高横浜キャンパスフェスティバルWebページ"}
-        content="No title"
-      />
-      <meta name="twitter:description" content="No body" />
-      <meta
-        property="og:image"
-        content="https://campus-festival.vercel.app/ogp/OGP-Notitle.png"
-      />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@mochi_749" />
-      <meta property="og:site_name" content="No title" />
-      <meta property="og:locale" content="ja_JP" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="icon" href="icon/icon.png" />
-      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-    </Head>
+    {(() => {
+      if (useHead === false) {
+        // return <span>Good morning</span>;
+        return <></>;
+      } else {
+        return (
+          <Head>
+            <title>
+              {title + " | N高横浜キャンパスフェスティバルWebページ"}
+            </title>
+            <meta charSet="utf-8" />
+            <meta
+              name="viewport"
+              content="initial-scale=1.0, width=device-width"
+            />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+            <meta
+              name="viewport"
+              content="width=device-width,initial-scale=1"
+            />
+            <meta name="description" content="No body" />
+            <meta
+              property="og:url"
+              content="https://campus-festival.vercel.app/"
+            />
+            <meta
+              property="og:title"
+              // content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+              content="No title"
+            />
+            <meta name="twitter:description" content="No body" />
+            <meta
+              property="og:image"
+              content="https://campus-festival.vercel.app/ogp/OGP-Notitle.png"
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@mochi_749" />
+            <meta property="og:site_name" content="No title" />
+            <meta property="og:locale" content="ja_JP" />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+              rel="stylesheet"
+            />
+            <link rel="icon" href="icon/icon.png" />
+            {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          </Head>
+        );
+      }
+    })()}
+
     {/* <header> */}
     {(() => {
       if (showHeader === false) {

@@ -26,6 +26,7 @@ class RemainingTime extends React.Component {
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
     return (
+      "残り" +
       Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
       "日" +
       Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
@@ -33,7 +34,7 @@ class RemainingTime extends React.Component {
       Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
       "分" +
       Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
-      "秒後"
+      "秒"
     );
   }
 
@@ -74,6 +75,14 @@ export default function countdowntimer() {
         </Link>
       </div>
       <div className={styles.mainText}>
+        <h1
+          className={
+            styles.topicon +
+            " text-3xl sm:text-6xl font-sans text-center mt-8  font-bold"
+          }
+        >
+          Ykohama campus festival
+        </h1>
         <h1 className="text-5xl font-semibold ">まもなく始まります</h1>
         <h2 className="text-4xl font-semibold ">
           <RemainingTime />
