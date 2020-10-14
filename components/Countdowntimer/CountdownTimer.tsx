@@ -80,10 +80,12 @@ export default function countdowntimer() {
             styles.topicon + " text-3xl sm:text-6xl font-sans  mt-0  font-bold"
           }
         >
-          Ykohama campus festival
+          Yokohama campus festival
         </h1>
-        <h1 className="text-5xl font-semibold ">まもなく始まります</h1>
-        <h2 className="text-4xl font-semibold ">
+        <h1 className="sm:text-5xl  text-3xl font-semibold ">
+          まもなく始まります
+        </h1>
+        <h2 className="sm:text-4xl text-2xl font-semibold ">
           <RemainingTime />
         </h2>
       </div>
