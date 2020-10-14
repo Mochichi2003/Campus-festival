@@ -6,6 +6,7 @@ import Layout from "../../components/Layout";
 import MarkdownStyle from "../../style/markdown.module.css";
 import styles from "../../style/posts/[postname].module.sass";
 // import { Button } from "react-bootstrap";
+import prism from "prismjs";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
