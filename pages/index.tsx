@@ -14,8 +14,12 @@ const IndexPage = () => (
         rel="stylesheet"
       />
     </Head>
+    <Layout showFotter={false} showHeader={true}></Layout>
+    <CountdownTimer />
     <Layout
       title="Home"
+      showFotter={false}
+      showHeader={false}
       // NotShowHederAndFooter="true"
     >
       <h1
@@ -34,6 +38,8 @@ const IndexPage = () => (
         </Link>
       </div>
     </Layout>
+
+    <Layout showHeader={false} showFotter={true}></Layout>
     {/* <CountdownTimer /> */}
   </div>
 );

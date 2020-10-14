@@ -10,6 +10,7 @@ type Props = {
   NotShowHederAndFooter?: boolean | "true";
   showHeader?: boolean;
   showFotter?: boolean;
+  HasHeaderMargin?: boolean;
 };
 
 // class hederAndFooterAndContainer extends React.Component {}
@@ -20,6 +21,7 @@ const Layout = ({
   NotShowHederAndFooter,
   showHeader,
   showFotter,
+  HasHeaderMargin,
 }: Props) => (
   <div>
     <Head>
@@ -53,11 +55,11 @@ const Layout = ({
     </Head>
     {/* <header> */}
     {(() => {
-      if (NotShowHederAndFooter === "true") {
+      if (showHeader === false) {
         // return <span>Good morning</span>;
         return <span></span>;
       } else {
-        return <Header />;
+        return <Header HasHeaderMargin={HasHeaderMargin} />;
       }
     })()}
 
@@ -76,7 +78,7 @@ const Layout = ({
     })()}
 
     {(() => {
-      if (NotShowHederAndFooter === "true") {
+      if (showFotter === false) {
         // return <span>Good morning</span>;
         return <span></span>;
       } else {

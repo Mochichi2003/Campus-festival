@@ -43,6 +43,13 @@ module.exports = {
       2: "2px",
       4: "4px",
     },
+    height: {
+      sm: "8px",
+      md: "16px",
+      lg: "24px",
+      xl: "48px",
+      header: "54px",
+    },
     extend: {
       colors: {
         cyan: "#9cdbff",
