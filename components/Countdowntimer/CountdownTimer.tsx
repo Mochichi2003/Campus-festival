@@ -12,7 +12,7 @@ const debug = Debug("dev:time");
 dayjs.locale("ja");
 // moment().locale("ja");
 class RemainingTime extends React.Component {
-  // TODO  カウントダウンを表示するようにする
+  //  TODO  カウントダウンを表示するようにする
   eventDate: any;
   timerID: any;
   time: any;
@@ -77,8 +77,7 @@ export default function countdowntimer() {
       <div className={styles.mainText}>
         <h1
           className={
-            styles.topicon +
-            " text-3xl sm:text-6xl font-sans text-center mt-8  font-bold"
+            styles.topicon + " text-3xl sm:text-6xl font-sans  mt-8  font-bold"
           }
         >
           Ykohama campus festival
