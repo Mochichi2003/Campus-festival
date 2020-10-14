@@ -82,12 +82,13 @@ export default function countdowntimer() {
         >
           Yokohama campus festival
         </h1>
-        <h1 className="sm:text-5xl  text-3xl font-semibold ">
+        <h2 className="sm:text-5xl  text-3xl font-semibold ">
           まもなく始まります
-        </h1>
+        </h2>
         <h2 className="sm:text-4xl text-2xl font-semibold ">
           <RemainingTime />
         </h2>
+        <h2></h2>
       </div>
     </div>
   );
