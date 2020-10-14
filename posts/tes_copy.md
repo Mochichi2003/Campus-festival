@@ -2,6 +2,7 @@
 title: "たいとる3"
 author: "Mochi"
 url: "https://github.com/Mochichi2003"
+img: "/octocat.png"
 ---
 
 # h1 Heading 

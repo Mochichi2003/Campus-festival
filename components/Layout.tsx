@@ -8,11 +8,19 @@ type Props = {
   children?: ReactNode;
   title?: string;
   NotShowHederAndFooter?: boolean | "true";
+  showHeader?: boolean;
+  showFotter?: boolean;
 };
 
 // class hederAndFooterAndContainer extends React.Component {}
 
-const Layout = ({ children, title, NotShowHederAndFooter }: Props) => (
+const Layout = ({
+  children,
+  title,
+  NotShowHederAndFooter,
+  showHeader,
+  showFotter,
+}: Props) => (
   <div>
     <Head>
       <title>{title + " - N高横浜キャンパスフェスティバルWebページ"}</title>

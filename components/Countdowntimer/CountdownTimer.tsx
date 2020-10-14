@@ -65,7 +65,7 @@ class RemainingTime extends React.Component {
     );
   }
 }
-export default function header() {
+export default function countdowntimer() {
   return (
     <div className={styles.main}>
       <div className="text-lg p-3">
