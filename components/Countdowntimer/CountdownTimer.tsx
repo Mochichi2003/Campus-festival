@@ -19,28 +19,53 @@ class RemainingTime extends React.Component {
   state: any;
 
   nowtime(): any {
+    // 上は本番用
     this.eventDate = dayjs(
       "2020-11-29 13:00:00.000",
       "YYYY-MM-DD HH:mm:ss.SSS"
     );
+    // 下はテスト用
+    this.eventDate = dayjs(
+      "2020-10-12 13:00:00.000",
+      "YYYY-MM-DD HH:mm:ss.SSS"
+    );
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
-    return (
-      "残り" +
-      Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
-      "日" +
-      Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
-      "時間" +
-      Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
-      "分" +
-      Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
-      "秒"
-    );
+    if (this.eventDate.diff(dayjs()) < 0) {
+      console.log("0秒以下になりました");
+      console.log(this.eventDate.diff(dayjs()));
+      return "";
+    } else {
+      return (
+        "残り" +
+        Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
+        "日" +
+        Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
+        "時間" +
+        Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
+        "分" +
+        Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
+        "秒"
+      );
+    }
+  }
+
+  nowsession() {
+    if (this.nowtime() === "") {
+      return (
+        <div>
+          開催中
+          {/* <div className={styles.arrows}></div> */}
+        </div>
+      );
+    } else {
+      return "まもなく始まります";
+    }
   }
 
   constructor(props: any) {
     super(props);
-    this.state = { time: this.nowtime() };
+    this.state = { time: this.nowtime(), insession: this.nowsession() };
   }
 
   componentDidMount() {
@@ -54,6 +79,7 @@ class RemainingTime extends React.Component {
   tick() {
     this.setState({
       time: this.nowtime(),
+      insession: this.nowsession(),
     });
   }
 
@@ -61,11 +87,16 @@ class RemainingTime extends React.Component {
   render() {
     return (
       <>
+        <h2 className="sm:text-5xl  text-3xl font-semibold ">
+          {/* まもなく始まります */}
+          {this.state.insession}
+        </h2>
         <p>{this.state.time}</p>
       </>
     );
   }
 }
+
 export default function countdowntimer() {
   return (
     <div className={styles.main}>
@@ -82,9 +113,7 @@ export default function countdowntimer() {
         >
           Yokohama campus festival
         </h1>
-        <h2 className="sm:text-5xl  text-3xl font-semibold ">
-          まもなく始まります
-        </h2>
+
         <h2 className="sm:text-4xl text-2xl font-semibold ">
           <RemainingTime />
         </h2>
