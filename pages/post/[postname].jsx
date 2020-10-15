@@ -29,9 +29,48 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <p className={styles.postname + " my-2"}>
           <span>
             {/* Markdownのかいたやつの本文が入るところ */}
-            <a href={frontmatter.url}>{frontmatter.author}</a>
+
+            {(() => {
+              if (frontmatter.url) {
+                // return <span>Good morning</span>;
+                return (
+                  <>
+                    {/* {frontmatter.url}{" "} */}
+                    <a className="text-blue-400" href={frontmatter.url}>
+                      {frontmatter.author}
+                    </a>
+                    さんが書きました
+                    <br />
+                    <a
+                      href={frontmatter.url}
+                      className="transition duration-500 ease-in-out h-8 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="flex">
+                        <img
+                          src="/icon/icons8-geography.png"
+                          className="w-8 h-8 items-center"
+                          alt="アイコン"
+                        />
+                        <p className="flex h-8 items-center">Web</p>
+                      </div>
+                    </a>
+                  </>
+                );
+              } else {
+                return (
+                  <div
+                    className={styles.main_contents + " m-auto	 justify-center"}
+                  >
+                    {frontmatter.author}さんが書きました
+                  </div>
+                );
+              }
+            })()}
+
+            {/* <a href={frontmatter.url}>{frontmatter.author}</a> */}
           </span>
-          さんが書きました
         </p>
         <hr className={styles.hr} />
         <div className={MarkdownStyle.markdown_body}>
