@@ -25,10 +25,10 @@ class RemainingTime extends React.Component {
       "YYYY-MM-DD HH:mm:ss.SSS"
     );
     // 下はテスト用
-    this.eventDate = dayjs(
-      "2020-10-12 13:00:00.000",
-      "YYYY-MM-DD HH:mm:ss.SSS"
-    );
+    // this.eventDate = dayjs(
+    //   "2020-10-12 13:00:00.000",
+    //   "YYYY-MM-DD HH:mm:ss.SSS"
+    // );
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
     if (this.eventDate.diff(dayjs()) < 0) {
@@ -36,17 +36,18 @@ class RemainingTime extends React.Component {
       console.log(this.eventDate.diff(dayjs()));
       return "";
     } else {
-      return (
-        "残り" +
-        Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
-        "日" +
-        Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
-        "時間" +
-        Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
-        "分" +
-        Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
-        "秒"
-      );
+      return {
+        times:
+          "残り" +
+          Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
+          "日" +
+          Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
+          "時間" +
+          Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
+          "分" +
+          Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60),
+        show: true,
+      };
     }
   }
 
@@ -65,11 +66,11 @@ class RemainingTime extends React.Component {
 
   constructor(props: any) {
     super(props);
-    this.state = { time: this.nowtime(), insession: this.nowsession() };
+    this.state = { time: this.nowtime().times, insession: this.nowsession() };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 100);
+    this.timerID = setInterval(() => this.tick(), 10);
   }
 
   componentWillUnmount() {
@@ -78,7 +79,7 @@ class RemainingTime extends React.Component {
 
   tick() {
     this.setState({
-      time: this.nowtime(),
+      time: this.nowtime().times,
       insession: this.nowsession(),
     });
   }
