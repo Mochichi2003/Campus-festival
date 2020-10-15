@@ -12,6 +12,8 @@
     "lint": "eslint --fix --ext .js,.jsx,.scss,.sass,.ts,.tsx,.css  ."
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.18",
+    "@next/mdx": "^9.5.5",
     "@types/debug": "^4.1.5",
     "bootstrap": "^4.5.2",
     "d3-array": "^2.8.0",
