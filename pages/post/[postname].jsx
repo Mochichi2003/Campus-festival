@@ -43,7 +43,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                     <br />
                     <a
                       href={frontmatter.url}
-                      className="transition duration-500 ease-in-out h-8 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300"
+                      className="transition duration-500 ease-in-out h-8 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300 transform  hover:scale-110"
                       target="_blank"
                       rel="noreferrer"
                     >
