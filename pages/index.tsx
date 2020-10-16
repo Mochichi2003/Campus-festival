@@ -31,7 +31,7 @@ const IndexPage = () => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
-        Youtubeが入るところ
+        <div className="border">Youtubeが入るところ</div>
         <Link href="./postdatas">
           <a className="text-blue-500 no-underline hover:underline ">
             展示物一覧
