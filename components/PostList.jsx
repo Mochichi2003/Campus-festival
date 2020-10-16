@@ -5,12 +5,12 @@ import Style from "./style/PostList.module.sass";
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
   // postsのリストをランダムにsortするところ
-  for (let i = posts.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var tmp = posts[i];
-    posts[i] = posts[j];
-    posts[j] = tmp;
-  }
+  // for (let i = posts.length - 1; i > 0; i--) {
+  //   var j = Math.floor(Math.random() * (i + 1));
+  //   var tmp = posts[i];
+  //   posts[i] = posts[j];
+  //   posts[j] = tmp;
+  // }
   return (
     <div>
       <h1 className="text-3xl font-semibold my-6 md:text-5xl">
@@ -27,7 +27,7 @@ export default function PostList({ posts }) {
               <div className={Style.PostList + "    "} key={post.slug}>
                 <Link
                   href={{
-                    pathname: `/post/${post.slug}`,
+                    pathname: `/post/${post.slug}`, // 投稿したやつのりんく
                   }}
                 >
                   <div>
@@ -54,7 +54,7 @@ export default function PostList({ posts }) {
                       </div>
                       <div className="p-3 sm:p-4 px-4 py-2">
                         <a>
-                          <h2 className=" md:text-3xl  font-medium">
+                          <h2 className=" md:text-3xl text-xl  font-medium">
                             {post.frontmatter.title}
                           </h2>
                         </a>
