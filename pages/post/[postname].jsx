@@ -63,7 +63,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                   <div
                     className={styles.main_contents + " m-auto	 justify-center"}
                   >
-                    {frontmatter.author}さんが書きました
+                    {frontmatter.author}
+                    さんが書きました
                   </div>
                 );
               }

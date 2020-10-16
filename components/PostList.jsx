@@ -4,7 +4,7 @@ import Style from "./style/PostList.module.sass";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-
+  // postsのリストをランダムにsortするところ
   for (let i = posts.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
     var tmp = posts[i];
@@ -25,7 +25,11 @@ export default function PostList({ posts }) {
           posts.map((post) => {
             return (
               <div className={Style.PostList + "    "} key={post.slug}>
-                <Link href={{ pathname: `/post/${post.slug}` }}>
+                <Link
+                  href={{
+                    pathname: `/post/${post.slug}`,
+                  }}
+                >
                   <div>
                     {" "}
                     <div className="  border-solid border rounded border-gray-300  flex">
