@@ -4,8 +4,6 @@ Next.js + tyepScript で作られています。
 
 下のは Nextjs のデフォルトの Readme です
 
-
-
 # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.

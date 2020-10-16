@@ -31,8 +31,7 @@ export default function PostList({ posts }) {
                   }}
                 >
                   <div>
-                    {" "}
-                    <div className="  border-solid border rounded border-gray-300  flex">
+                    <div className="  border-solid border rounded-lg border-gray-300  flex">
                       <div className=" text-gray-700 text-center   ">
                         {(() => {
                           if (post.frontmatter.img) {
