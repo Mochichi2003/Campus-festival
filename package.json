@@ -6,24 +6,36 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "server": " next build && next start",
     "deploy": "npm run build && npm run export",
     "type-check": "tsc",
     "lint": "eslint --fix --ext .js,.jsx,.scss,.sass,.ts,.tsx,.css  ."
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.18",
+    "@next/mdx": "^9.5.5",
     "@types/debug": "^4.1.5",
     "bootstrap": "^4.5.2",
+    "d3-array": "^2.8.0",
     "dayjs": "^1.8.36",
     "debug": "^4.2.0",
     "dotenv": "^8.2.0",
+    "dracula-prism": "^1.2.1",
+    "github-markdown-css": "^4.0.0",
     "gray-matter": "^4.0.2",
+    "highlightjs": "^9.16.2",
+    "jquery": "^3.5.1",
     "next": "latest",
+    "popper.js": "^1.16.1",
+    "prismjs": "^1.22.0",
     "raw-loader": "^4.0.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.12.0",
     "react-markdown": "^4.3.1",
-    "sass": "^1.26.11"
+    "recompose": "^0.30.0",
+    "sass": "^1.26.11",
+    "webpack": "^5.0.0"
   },
   "husky": {
     "hooks": {
@@ -34,6 +46,7 @@
     "*.js": "eslint --fix"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
@@ -50,7 +63,10 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.2",
+    "tailwindcss": "^1.8.10",
     "typescript": "4.0"
   },
   "license": "MIT"

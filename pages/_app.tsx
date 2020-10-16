@@ -1,7 +1,10 @@
 import { AppProps } from "next/app";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/global.css";
 import Router from "next/router";
+import "prismjs/themes/prism-okaidia.css";
+
+import "../style/tailwind.css";
 
 import * as gtag from "../lib/gtag";
 

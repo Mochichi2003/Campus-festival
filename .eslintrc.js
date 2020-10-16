@@ -19,7 +19,9 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
+    "no-useless-escape": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": [
       1,
       { extensions: [".js", ".jsx", ".tsx"] },
@@ -28,9 +30,12 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        jsxBracketSameLine: true,
+        jsxBracketSameLine: false,
         singleQuote: false,
+        tabWidth: 2,
         trailingComma: "es5",
+        useTabs: false,
+        printWidth: 80,
       },
     ],
   },
