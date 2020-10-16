@@ -26,15 +26,24 @@ class RemainingTime extends React.Component {
     );
     // 下はテスト用
     // this.eventDate = dayjs(
-    //   "2020-10-12 13:00:00.000",
+    //   "2020-10-16 11:00:00.000",
     //   "YYYY-MM-DD HH:mm:ss.SSS"
     // );
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
-    if (this.eventDate.diff(dayjs()) < 0) {
+    if (this.eventDate.diff(dayjs()) < 3 * 60 * 60 * 1000 * -1) {
       console.log("0秒以下になりました");
       console.log(this.eventDate.diff(dayjs()));
-      return "";
+      return {
+        end: true,
+      }; // 終了したときはendがtrueになる
+    } else if (this.eventDate.diff(dayjs()) < 0) {
+      console.log("0秒以下になりました");
+      console.log(this.eventDate.diff(dayjs()));
+      return {
+        end: false,
+        helding: true,
+      };
     } else {
       return {
         times:
@@ -52,13 +61,15 @@ class RemainingTime extends React.Component {
   }
 
   nowsession() {
-    if (this.nowtime() === "") {
+    if (this.nowtime().helding) {
       return (
         <div>
           開催中
           {/* <div className={styles.arrows}></div> */}
         </div>
       );
+    } else if (this.nowtime().end) {
+      return <div>終了しました</div>;
     } else {
       return "まもなく始まります";
     }
@@ -66,7 +77,10 @@ class RemainingTime extends React.Component {
 
   constructor(props: any) {
     super(props);
-    this.state = { time: this.nowtime().times, insession: this.nowsession() };
+    this.state = {
+      time: this.nowtime().times,
+      insession: this.nowsession(),
+    };
   }
 
   componentDidMount() {
