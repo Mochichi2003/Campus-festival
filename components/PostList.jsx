@@ -38,15 +38,17 @@ export default function PostList({ posts }) {
                           if (post.frontmatter.img) {
                             // return <span>Good morning</span>;
                             return (
-                              <img
-                                src={post.frontmatter.img}
-                                alt="アイコン画像"
-                                className={
-                                  Style.postlisticonimg +
-                                  " translate-x-1/2 translate-y-1/2 border-gray-300 border m-2 rounded"
-                                }
-                                style={{}}
-                              />
+                              <div className="max-w-10 max-h-10 items-center   flex-row">
+                                <img
+                                  src={post.frontmatter.img}
+                                  alt="アイコン画像"
+                                  className={
+                                    Style.postlisticonimg +
+                                    "  border-gray-300 border m-2 rounded"
+                                  }
+                                  style={{}}
+                                />
+                              </div>
                             );
                           }
                         })()}
