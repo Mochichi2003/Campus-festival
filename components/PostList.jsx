@@ -5,6 +5,12 @@ import Style from "./style/PostList.module.sass";
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
 
+  for (let i = posts.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = posts[i];
+    posts[i] = posts[j];
+    posts[j] = tmp;
+  }
   return (
     <div>
       <h1 className="text-3xl font-semibold my-6 md:text-5xl">
