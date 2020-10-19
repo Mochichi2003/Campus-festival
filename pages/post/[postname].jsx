@@ -43,7 +43,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                     <br />
                     <a
                       href={frontmatter.url}
-                      className="transition duration-500 ease-in-out h-8 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300 transform  hover:scale-110"
+                      className="transition duration-500 ease-in-out h-4 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300 transform  hover:scale-110"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -52,8 +52,11 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                           src="/icon/icons8-geography.png"
                           className="w-8 h-8 items-center"
                           alt="アイコン"
+                          style={{
+                            height: "32px",
+                          }}
                         />
-                        <p className="flex h-8 items-center">Web</p>
+                        <p className="flex h-8 items-center mx-2">Web</p>
                       </div>
                     </a>
                   </>

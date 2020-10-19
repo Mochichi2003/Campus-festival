@@ -24,9 +24,17 @@ module.exports = {
     "react/prop-types": "off",
     "react/jsx-filename-extension": [
       1,
-      { extensions: [".js", ".jsx", ".tsx"] },
+      {
+        extensions: [".js", ".jsx", ".tsx", "ts"],
+      },
     ], // should add ".ts" if typescript project
-    "no-use-before-define": ["off", { functions: true, classes: true }],
+    "no-use-before-define": [
+      "off",
+      {
+        functions: true,
+        classes: true,
+      },
+    ],
     "prettier/prettier": [
       "error",
       {
