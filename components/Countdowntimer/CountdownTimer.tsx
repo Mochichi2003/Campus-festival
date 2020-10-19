@@ -6,7 +6,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
-import Link from "next/link";
+// import Link from "next/link";
 const debug = Debug("dev:time");
 
 dayjs.locale("ja");
@@ -117,9 +117,9 @@ export default function countdowntimer() {
   return (
     <div className={styles.main}>
       <div className="text-lg p-3">
-        <Link href="/">
+        {/* <Link href="/">
           <a className=" duration-150 text-gray-200">戻る</a>
-        </Link>
+        </Link> */}
       </div>
       <div className={styles.mainText}>
         <h1

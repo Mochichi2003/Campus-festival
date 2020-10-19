@@ -32,9 +32,22 @@ const IndexPage = () => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
-        <div>ここにタイムテーブルを入れる</div>
-        <Timeteble />
-        <div className="border">Youtubeが入るところ</div>
+        {/* <div>ここにタイムテーブルを入れる</div> */}
+        <div>
+          <Timeteble />
+        </div>
+
+        <div className="border">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/nRJpbbRe-70"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          ></iframe>
+        </div>
         <Link href="./postdatas">
           <a className="text-blue-500 no-underline hover:underline ">
             展示物一覧
