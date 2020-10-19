@@ -1,10 +1,11 @@
 import Link from "next/link";
-import Layout from "../components/Layout";
+import Head from "next/head";
+import React from "react";
 
 // import style from "../style/index.module.sass";
-import React from "react";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
-import Head from "next/head";
+import Layout from "../components/Layout";
+import Timeteble from "../components/timetable";
 
 const IndexPage = () => (
   <div>
@@ -31,6 +32,8 @@ const IndexPage = () => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
+        <div>ここにタイムテーブルを入れる</div>
+        <Timeteble />
         <div className="border">Youtubeが入るところ</div>
         <Link href="./postdatas">
           <a className="text-blue-500 no-underline hover:underline ">

@@ -4,18 +4,17 @@ import Style from "./style/PostList.module.sass";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-  // postsのリストをランダムにsortするところ
-  // for (let i = posts.length - 1; i > 0; i--) {
-  //   var j = Math.floor(Math.random() * (i + 1));
-  //   var tmp = posts[i];
-  //   posts[i] = posts[j];
-  //   posts[j] = tmp;
-  // }
+  // postsのリストをランダムにsortするところ;
+  for (let i = posts.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = posts[i];
+    posts[i] = posts[j];
+    posts[j] = tmp;
+  }
   return (
     <div>
       <h1 className="text-3xl font-semibold my-6 md:text-5xl">
-        {" "}
-        ここはN高横浜キャンパスの生徒が作った作品を展示するところです
+        横浜キャンパスの生徒が作った作品集
       </h1>
       <hr />
       {!posts && <div>何もありません！</div>}

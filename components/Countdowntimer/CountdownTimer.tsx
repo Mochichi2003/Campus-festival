@@ -54,7 +54,8 @@ class RemainingTime extends React.Component {
           "時間" +
           Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
           "分" +
-          Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60),
+          Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
+          "秒",
         show: true,
       };
     }
