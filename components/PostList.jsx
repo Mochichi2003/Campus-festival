@@ -53,7 +53,7 @@ export default function PostList({ posts }) {
                       </div>
                       <div className="p-3 sm:p-4 px-4 py-2">
                         <a>
-                          <h2 className=" md:text-3xl text-xl  font-medium">
+                          <h2 className=" md:text-3xl text-2xl font-bold">
                             {post.frontmatter.title}
                           </h2>
                         </a>

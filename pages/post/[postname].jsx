@@ -43,13 +43,13 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                     <br />
                     <a
                       href={frontmatter.url}
-                      className="transition duration-500 ease-in-out h-4 cursor-pointer bg-blue-400 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-300 transform  hover:scale-110"
+                      className="transition duration-500 ease-in-out h-4 cursor-pointer bg-blue-300 py-1 px-2 rounded w-auto inline-block mt-1 hover:bg-blue-200 transform  hover:scale-110"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <div className="flex">
                         <img
-                          src="/icon/icons8-geography.png"
+                          src="/icon/icons8-web.png"
                           className="w-8 h-8 items-center"
                           alt="アイコン"
                           style={{
