@@ -1,0 +1,22 @@
+[
+  {
+    "path": "$ROOTPATH$/components/Layout.tsx",
+    "bookmarks": [
+      {
+        "line": 18,
+        "column": 10,
+        "label": "わーい"
+      }
+    ]
+  },
+  {
+    "path": "$ROOTPATH$/components/timetable.tsx",
+    "bookmarks": [
+      {
+        "line": 46,
+        "column": 11,
+        "label": ""
+      }
+    ]
+  }
+]
