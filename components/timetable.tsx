@@ -54,7 +54,8 @@ const ListItem = () => (
       <tbody>
         <tr className="bg-gray-100">
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            13:00〜13:02
+            {/* 13:00〜13:02 */}
+            13:00〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             オープニング
@@ -71,7 +72,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            13:07〜13:27
+            {/* 13:07〜13:27 */}
+            13:07〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             バンド①
@@ -88,7 +90,8 @@ const ListItem = () => (
         </tr> */}
         <tr className="bg-gray-100">
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            13:32〜13:52
+            {/* 13:32〜13:52 */}
+            13:32〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             バンド②
@@ -105,7 +108,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            14:02〜14:12
+            {/* 14:02〜14:12 */}
+            14:02〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             ダンス
@@ -122,7 +126,8 @@ const ListItem = () => (
         </tr> */}
         <tr className="bg-gray-100">
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            14:17〜14:47
+            {/* 14:17〜14:47 */}
+            14:17〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             ミス・ミスターコンテスト
@@ -139,7 +144,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            14:52~15:17
+            {/* 14:52~15:17 */}
+            14:52~
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             スプラトゥーン決勝戦
@@ -156,7 +162,8 @@ const ListItem = () => (
         </tr> */}
         <tr className="bg-gray-100">
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            14:22〜15:37
+            {/* 14:22〜15:37 */}
+            14:22〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             のど自慢
@@ -173,7 +180,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
-            15:42~15:44
+            {/* 15:42~15:44 */}
+            15:42~
           </td>
           <td className="border-t  border-gray-400 px-4 py-2" valign="bottom">
             エンディング
