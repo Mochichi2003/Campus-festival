@@ -19,17 +19,17 @@ export default function header({ HasHeaderMargin }: Props) {
             " flex items-center  w-screen flex-row  p-2 bg-gray-900 bg-opacity-95"
           }
         >
-          <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-xl px-2  py-0 m-1">
-            <Link href="/">
+          <Link href="/">
+            <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-xl px-2  py-0 m-0 sss:m-1">
               <p className="font-medium">横浜CPキャンフェス</p>
-            </Link>
-          </div>
+            </div>
+          </Link>
           {/* <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-lg px-2  py-0 m-1">
             <Link href="/live">
               <p>live</p>
             </Link>
           </div> */}
-          <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-lg px-2  py-0 m-1">
+          <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-lg px-2  py-0 m-0 sss:m-1">
             <Link href="/postdatas">
               <p>生徒の作品集</p>
             </Link>
@@ -41,7 +41,11 @@ export default function header({ HasHeaderMargin }: Props) {
       {(() => {
         if (HasHeaderMargin === true) {
           // return <span>Good morning</span>;
-          return <div className={" h-header w-screen"}></div>;
+          return (
+            <div
+              className={" h-header_mini sss:h-header w-screen duration-300"}
+            ></div>
+          );
         } else {
           return <></>;
         }
