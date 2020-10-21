@@ -4,6 +4,7 @@ import "../style/global.css";
 import Router from "next/router";
 import "prismjs/themes/prism-okaidia.css";
 
+import "../style/posts/postname.scss";
 import "../style/tailwind.css";
 
 import * as gtag from "../lib/gtag";

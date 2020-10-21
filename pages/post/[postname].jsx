@@ -6,7 +6,8 @@ import Layout from "../../components/Layout";
 import styles from "../../style/posts/[postname].module.scss";
 // import { Button } from "react-bootstrap";
 // import prism from "prismjs";
-
+// import "../../style/posts/postname.scss";
+// import MarkdownStyle from "../../components/MadkdownPreviewCss";
 // import MarkdownStyle from "../../style/markdown.module.css";
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
@@ -77,8 +78,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </span>
         </p>
         <hr className={styles.hr} />
-        <div className={styles.markdown_body}>
-          <ReactMarkdown source={markdownBody} />
+        <div className={styles.markdown_body + " "}>
+          <div className="markdown_body">
+            <ReactMarkdown source={markdownBody} />
+          </div>
         </div>
       </article>
     </Layout>
