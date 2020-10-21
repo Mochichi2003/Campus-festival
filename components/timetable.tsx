@@ -20,7 +20,7 @@ const ListItem = () => (
       </thead>
       <tbody>
         <tr className="bg-gray-100">
-          <td className="border-t  border-gray-400 px-4 py-3">10:53 ~ 10:55</td>
+          <td className="border-t  border-gray-400 px-4 py-3">10:53 〜 10:55</td>
           <td className="border-t  border-gray-400 px-4 py-3">カラオケ大会</td>
           <td className="border-t border-gray-400 px-4 py-3">
             わああああああああ
@@ -144,8 +144,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-3" valign="bottom">
-            {/* 14:52~15:17 */}
-            14:52~
+            {/* 14:52〜15:17 */}
+            14:52〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-3" valign="bottom">
             スプラトゥーン決勝戦
@@ -180,8 +180,8 @@ const ListItem = () => (
         </tr> */}
         <tr>
           <td className="border-t  border-gray-400 px-4 py-3" valign="bottom">
-            {/* 15:42~15:44 */}
-            15:42~
+            {/* 15:42〜15:44 */}
+            15:42〜
           </td>
           <td className="border-t  border-gray-400 px-4 py-3" valign="bottom">
             エンディング
