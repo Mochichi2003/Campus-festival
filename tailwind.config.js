@@ -59,6 +59,7 @@ module.exports = {
       lg: "24px",
       xl: "48px",
       header: "54px",
+      header_mini: "40px",
     },
     extend: {
       colors: {
