@@ -3,11 +3,11 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import MarkdownStyle from "../../style/markdown.module.css";
-import styles from "../../style/posts/[postname].module.sass";
+import styles from "../../style/posts/[postname].module.scss";
 // import { Button } from "react-bootstrap";
 // import prism from "prismjs";
 
+// import MarkdownStyle from "../../style/markdown.module.css";
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
@@ -77,7 +77,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </span>
         </p>
         <hr className={styles.hr} />
-        <div className={MarkdownStyle.markdown_body}>
+        <div className={styles.markdown_body}>
           <ReactMarkdown source={markdownBody} />
         </div>
       </article>
