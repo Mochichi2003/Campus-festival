@@ -78,8 +78,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </span>
         </p>
         <hr className={styles.hr} />
-        <div className={styles.markdown_body + " "}>
-          <div className="markdown_body">
+        <div className={styles.markdownBody + " "}>
+          <div className="markdownBody">
             <ReactMarkdown source={markdownBody} />
           </div>
         </div>
