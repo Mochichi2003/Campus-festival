@@ -37,7 +37,7 @@ const IndexPage = () => (
           <Timeteble />
         </div>
 
-        <div className="border">
+        {/* <div className="border">
           <iframe
             width="560"
             height="315"
@@ -45,14 +45,16 @@ const IndexPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-full h-full"
+            className="w-full h-full m-10"
           ></iframe>
+        </div> */}
+        <div className="my-8">
+          <Link href="./postdatas">
+            <a className="text-blue-400 no-underline hover:underline text-4xl  font-semibold">
+              展示物一覧
+            </a>
+          </Link>
         </div>
-        <Link href="./postdatas">
-          <a className="text-blue-500 no-underline hover:underline ">
-            展示物一覧
-          </a>
-        </Link>
       </div>
     </Layout>
 
