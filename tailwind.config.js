@@ -35,6 +35,7 @@ module.exports = {
       18: "18rem",
       19: "19rem",
       20: "20rem",
+      "screen-lg": "1024px",
     },
     screens: {
       sss: "400px",
