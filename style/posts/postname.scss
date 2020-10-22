@@ -559,6 +559,9 @@
   background-color: #fff;
   box-sizing: content-box;
   max-width: 100%;
+  max-height: 80vh;
+  text-align: center;
+  margin: auto;
 }
 .markdown_body img[align="right"] {
   padding-left: 20px;

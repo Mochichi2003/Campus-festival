@@ -16,12 +16,12 @@ export default function header({ HasHeaderMargin }: Props) {
           style={{}}
           className={
             styles.header_background +
-            " flex items-center  w-screen flex-row  p-2 bg-gray-900 bg-opacity-95"
+            " flex items-center  w-screen flex-row  p-2  bg-opacity-90"
           }
         >
           <Link href="/">
             <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-xl px-2  py-0 m-0 sss:m-1">
-              <p className="font-medium">横浜CPキャンフェス</p>
+              <p className="font-bold">横浜CPキャンフェス</p>
             </div>
           </Link>
           {/* <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-lg px-2  py-0 m-1">

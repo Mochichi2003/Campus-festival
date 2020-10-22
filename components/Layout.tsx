@@ -120,7 +120,11 @@ const Layout = ({
         return <>{children}</>;
       } else {
         return (
-          <div className={styles.main_contents + " m-auto	 justify-center"}>
+          <div
+            className={
+              styles.main_contents + " max-w-screen-lg m-auto	 justify-center"
+            }
+          >
             {children}
           </div>
         );
