@@ -44,7 +44,8 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": "eslint --fix",
+    "*.*": "yarn format"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
