@@ -44,16 +44,21 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.*": "yarn format"
+    "///*.*": "eslint --fix",
+    "///////////////*.*": "prettier --write ."
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/jest": "^26.0.15",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
