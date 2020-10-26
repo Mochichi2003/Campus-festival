@@ -74,31 +74,31 @@ const Layout = ({
             <link
               rel="apple-touch-icon"
               sizes="180x180"
-              href="/favicons/apple-touch-icon.png"
+              href="/icon/yokohama/apple-touch-icon.png"
             />
             <link
               rel="icon"
               type="image/png"
               sizes="32x32"
-              href="/favicons/favicon-32x32.png"
+              href="/icon/yokohama/favicon-32x32.png"
             />
             <link
               rel="icon"
               type="image/png"
               sizes="16x16"
-              href="/favicons/favicon-16x16.png"
+              href="/icon/yokohama/favicon-16x16.png"
             />
-            <link rel="manifest" href="/favicons/site.webmanifest" />
+            <link rel="manifest" href="/icon/yokohama/site.webmanifest" />
             <link
               rel="mask-icon"
-              href="/favicons/safari-pinned-tab.svg"
+              href="/icon/yokohama/safari-pinned-tab.svg"
               color="#5bbad5"
             />
-            <link rel="shortcut icon" href="/favicons/favicon.ico" />
+            <link rel="shortcut icon" href="/icon/yokohama/favicon.ico" />
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta
               name="msapplication-config"
-              content="/favicons/browserconfig.xml"
+              content="/icon/yokohama/browserconfig.xml"
             />
             <meta name="theme-color" content="#ffffff" />
             {/* faviconにかんして書いているところ 終わり */}
@@ -119,7 +119,7 @@ const Layout = ({
     })()}
 
     {/* メインの表示する部分 */}
-    {(() => {
+    {(() => {_
       if (NotShowHederAndFooter === "true") {
         // return <span>Good morning</span>;
         return <>{children}</>;
