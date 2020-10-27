@@ -119,7 +119,7 @@ const Layout = ({
     })()}
 
     {/* メインの表示する部分 */}
-    {(() => {_
+    {(() => {
       if (NotShowHederAndFooter === "true") {
         // return <span>Good morning</span>;
         return <>{children}</>;

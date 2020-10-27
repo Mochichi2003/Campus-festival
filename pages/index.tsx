@@ -50,7 +50,7 @@ const IndexPage = () => (
         </div> */}
         <div className="my-8">
           <Link href="./postdatas">
-            <a className="text-white no-underline hover:no-underline text-4xl  font-semibold bg-blue-500 py-4 rounded-lg px-8 hover:bg-blue-400 duration-300 hover:scale-105">
+            <a className="text-white no-underline hover:no-underline text-2xl  font-semibold bg-blue-500 py-4 rounded px-12 hover:bg-blue-400 duration-300 hover:scale-105">
               展示物一覧
             </a>
           </Link>
