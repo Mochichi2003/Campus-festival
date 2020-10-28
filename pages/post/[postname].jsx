@@ -1,6 +1,7 @@
 // import Link from "next/link";
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
+import marked from "marked";
 
 import Head from "next/head";
 import Layout from "../../components/Layout";
@@ -83,9 +84,14 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         </p>
         <hr className={styles.hr} />
         <div className={styles.markdownBody + " "}>
+          {/* <div className="markdownBody">
+            <ReactMarkdown source={markdownBody} />
+          </div> */}
           <div className="markdownBody">
-            <ReactMarkdown allowDangerousHtml={true} source={markdownBody} />
-            {/* <ReactMarkdownWithHtml  /> */}
+            <div
+              style={{ width: "100%" }}
+              dangerouslySetInnerHTML={{ __html: marked(markdownBody) }}
+            />
           </div>
         </div>
       </article>

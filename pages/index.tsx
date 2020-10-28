@@ -8,6 +8,7 @@ import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
+import Postdatas from "../components/postdatas";
 
 const IndexPage = ({ posts, title , description, ...props }) => (
   <div>
@@ -58,6 +59,7 @@ const IndexPage = ({ posts, title , description, ...props }) => (
           </Link>
           <Postlist posts={posts} />
         </div>
+        {/* <Postdatas /> */}
       </div>
     </Layout>
 
