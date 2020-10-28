@@ -54,11 +54,11 @@ export default function PostList({ posts }) {
                       </div>
                       <div className="p-3 sm:p-4 px-4 py-2">
                         <a>
-                          <h2 className=" md:text-3xl text-2xl font-bold">
+                          <h2 className=" md:text-3xl text-left text-2xl font-bold">
                             {post.frontmatter.title}
                           </h2>
                         </a>
-                        <p className="text-gray-900 pt-1">
+                        <p className="text-gray-900 text-left pt-1">
                           {post.frontmatter.author}
                           が書きました
                         </p>
