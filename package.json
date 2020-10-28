@@ -26,6 +26,7 @@
     "gray-matter": "^4.0.2",
     "highlightjs": "^9.16.2",
     "jquery": "^3.5.1",
+    "marked": "^1.2.2",
     "next": "latest",
     "popper.js": "^1.16.1",
     "prismjs": "^1.22.0",
