@@ -18,7 +18,7 @@ const IndexPage = ({ posts, title, description, ...props }) => (
         rel="stylesheet"
       />
     </Head>
-    <Layout showFotter={false} showHeader={true}></Layout>
+    <Layout showFotter={false} showHeader={false}></Layout>
     <CountdownTimer />
     <Layout
       title="Home"

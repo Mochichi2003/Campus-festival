@@ -21,7 +21,7 @@ const ListItem = () => (
         </tr>
       </thead>
       <tbody>
-        <tr className={"bg-gray-100  duration-300 " + styles.testtt}>
+        <tr className={"bg-gray-200  duration-300 " + styles.testtt}>
           <td className="  px-4 py-3">10:53 〜 10:55</td>
           <td className="  px-4 py-3">カラオケ大会</td>
           <td className=" hover: border-b hover:border-b-4 border-gray-400 px-4 py-3">
@@ -35,7 +35,7 @@ const ListItem = () => (
           </td>
           <td className=" hover: border-b hover:border-b-4 border-gray-400 px-4 py-3">112</td>
         </tr>
-        <tr className={"bg-gray-100  duration-300 " + styles.testtt}>
+        <tr className={"bg-gray-200  duration-300 " + styles.testtt}>
           <td className="  px-4 py-3">Chris</td>
           <td className="  px-4 py-3">
             Intro to JavaScript
@@ -62,7 +62,7 @@ const ListItem = () => (
       <tbody>
         <tr
           className={
-            "bg-gray-100 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
+            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
             styles.testtt
           }
         >
@@ -92,7 +92,7 @@ const ListItem = () => (
 
         <tr
           className={
-            "bg-gray-100  border-b hover:border-b-4  border-gray-400  duration-300 " +
+            "bg-gray-200  border-b hover:border-b-4  border-gray-400  duration-300 " +
             styles.testtt
           }
         >
@@ -122,7 +122,7 @@ const ListItem = () => (
 
         <tr
           className={
-            "bg-gray-100 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
+            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
             styles.testtt
           }
         >
@@ -152,7 +152,7 @@ const ListItem = () => (
 
         <tr
           className={
-            "bg-gray-100 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
+            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
             styles.testtt
           }
         >

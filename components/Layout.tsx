@@ -114,7 +114,7 @@ const Layout = ({
         // return <span>Good morning</span>;
         return <span></span>;
       } else {
-        // return <Header HasHeaderMargin={HasHeaderMargin} />;
+        return <Header HasHeaderMargin={HasHeaderMargin} />;
       }
     })()}
 
