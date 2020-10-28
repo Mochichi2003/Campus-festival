@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Head from "next/head";
 import React from "react";
+import matter from "gray-matter";
 
 // import style from "../style/index.module.sass";
+import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
 
-const IndexPage = () => (
+const IndexPage = ({ posts, title , description, ...props }) => (
   <div>
     <Head>
       <link
@@ -54,6 +56,7 @@ const IndexPage = () => (
               展示物一覧
             </a>
           </Link>
+          <Postlist posts={posts} />
         </div>
       </div>
     </Layout>
@@ -64,3 +67,31 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`);
+
+  const posts = ((context) => {
+    const keys = context.keys();
+    const values = keys.map(context);
+
+    const data = keys.map((key, index) => {
+      const slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
+      const value = values[index];
+      const document = matter(value.default);
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      };
+    });
+    return data;
+  })(require.context("../posts", true, /\.md$/));
+
+  return {
+    props: {
+      posts,
+      title: configData.default.title,
+      description: configData.default.description,
+    },
+  };
+}
