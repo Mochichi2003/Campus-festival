@@ -6,6 +6,7 @@ import React from "react";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
+import Postdatas from "../components/postdatas";
 
 const IndexPage = () => (
   <div>
@@ -55,6 +56,7 @@ const IndexPage = () => (
             </a>
           </Link>
         </div>
+        {/* <Postdatas /> */}
       </div>
     </Layout>
 
