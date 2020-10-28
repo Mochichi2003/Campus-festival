@@ -9,24 +9,19 @@
 //   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 // });
 // next.config.js
-const withMDX = require("@next/mdx")({
-  extension: /\.(md|mdx)$/,
-});
-module.exports =
-  ({
-    target: "serverless",
-    webpack: function (config) {
-      config.module.rules.push({
-        test: /\.md$/,
-        use: "raw-loader",
-      });
-      return config;
-    },
+// const withMDX = require("@next/mdx")({
+//   extension: /\.(md|mdx)$/,
+// });
+module.exports = {
+  target: "serverless",
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "raw-loader",
+    });
+    return config;
   },
-  withMDX({
-    // Pick up MDX files in the /pages/ directory
-    pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-  }));
+};
 // module.exports = {
 //   // pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 //   target: "serverless",

@@ -8,9 +8,9 @@ import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
-import Postdatas from "../components/postdatas";
+// import Postdatas from "../components/postdatas";
 
-const IndexPage = ({ posts, title , description, ...props }) => (
+const IndexPage = ({ posts, title, description, ...props }) => (
   <div>
     <Head>
       <link
@@ -52,11 +52,11 @@ const IndexPage = ({ posts, title , description, ...props }) => (
           ></iframe>
         </div> */}
         <div className="my-8">
-          <Link href="./postdatas">
+          {/* <Link href="./postdatas">
             <a className="text-white no-underline hover:no-underline text-2xl  font-semibold bg-blue-500 py-4 rounded px-12 hover:bg-blue-400 duration-300 hover:scale-105">
               展示物一覧
             </a>
-          </Link>
+          </Link> */}
           <Postlist posts={posts} />
         </div>
         {/* <Postdatas /> */}
@@ -69,6 +69,7 @@ const IndexPage = ({ posts, title , description, ...props }) => (
 );
 
 export default IndexPage;
+
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`);
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Style from "./style/PostList.module.sass";
 // import showpostsimg from "./ShowPostsImg";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
