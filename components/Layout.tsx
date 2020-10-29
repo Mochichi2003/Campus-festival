@@ -63,7 +63,7 @@ const Layout = ({
               content={title + "| N高横浜キャンパスフェスティバルWebページ"}
               // content="No title"
             />
-            <meta name="twitter:description" content="No body" />
+            {/* <meta name="twitter:description" content="No body" /> */}
             <meta
               property="og:image"
               content="https://campus-festival.vercel.app/ogp/OGP-Notitle.png"
