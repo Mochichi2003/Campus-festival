@@ -74,31 +74,31 @@ const Layout = ({
             <link
               rel="apple-touch-icon"
               sizes="180x180"
-              href="/icon/yokohama/apple-touch-icon.png"
+              href="icon/yokohama/apple-touch-icon.png"
             />
             <link
               rel="icon"
               type="image/png"
               sizes="32x32"
-              href="/icon/yokohama/favicon-32x32.png"
+              href="icon/yokohama/favicon-32x32.png"
             />
             <link
               rel="icon"
               type="image/png"
               sizes="16x16"
-              href="/icon/yokohama/favicon-16x16.png"
+              href="icon/yokohama/favicon-16x16.png"
             />
-            <link rel="manifest" href="/icon/yokohama/site.webmanifest" />
+            <link rel="manifest" href="icon/yokohama/site.webmanifest" />
             <link
               rel="mask-icon"
-              href="/icon/yokohama/safari-pinned-tab.svg"
+              href="icon/yokohama/safari-pinned-tab.svg"
               color="#5bbad5"
             />
-            <link rel="shortcut icon" href="/icon/yokohama/favicon.ico" />
+            <link rel="shortcut icon" href="icon/yokohama/favicon.ico" />
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta
               name="msapplication-config"
-              content="/icon/yokohama/browserconfig.xml"
+              content="icon/yokohama/browserconfig.xml"
             />
             <meta name="theme-color" content="#ffffff" />
             {/* faviconにかんして書いているところ 終わり */}
