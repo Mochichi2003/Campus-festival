@@ -39,7 +39,30 @@ const Layout = ({
                   return title + " | N高横浜キャンパスフェスティバル";
                 } else {
                   return "N高横浜キャンパスフェスティバル";
-                }sssssssssss
+                }sssssssssssssssssssssssssssssss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
               }} */}
               {title + " | N高横浜キャンパスフェスティバルWebページ"}
             </title>
