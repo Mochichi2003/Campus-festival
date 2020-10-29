@@ -36,28 +36,28 @@ const IndexPage = ({ posts, title, description, ...props }) => (
       </h1> */}
       <div className="my-2 text-lg text-center	">
         {/* <div>ここにタイムテーブルを入れる</div> */}
-        <div>
-          <Timeteble />
-        </div>
 
         {/* <div className="border">
           <iframe
-            width="560"
-            height="315"
+          width="560"
+          height="315"
             src="https://www.youtube.com/embed/nRJpbbRe-70"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full m-10"
-          ></iframe>
-        </div> */}
+            ></iframe>
+          </div> */}
         <div className="my-8">
           {/* <Link href="./postdatas">
             <a className="text-white no-underline hover:no-underline text-2xl  font-semibold bg-blue-500 py-4 rounded px-12 hover:bg-blue-400 duration-300 hover:scale-105">
-              展示物一覧
+            展示物一覧
             </a>
           </Link> */}
           <Postlist posts={posts} />
+        </div>
+        <div>
+          <Timeteble />
         </div>
         {/* <Postdatas /> */}
       </div>

@@ -6,13 +6,6 @@ import marked from "marked";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import styles from "../../style/posts/[postname].module.scss";
-// const ReactMarkdownWithHtml = require("react-markdown/with-html");
-import ReactMarkdownWithHtml from "react-markdown/with-html";
-// import { Button } from "react-bootstrap";
-// import prism from "prismjs";
-// import "../../style/posts/postname.scss";
-// import MarkdownStyle from "../../components/MadkdownPreviewCss";
-// import MarkdownStyle from "../../style/markdown.module.css";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
