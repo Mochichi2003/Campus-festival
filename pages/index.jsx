@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Head from "next/head";
 import React from "react";
 import matter from "gray-matter";
@@ -8,9 +8,10 @@ import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
+// import { type } from "os";
 // import Postdatas from "../components/postdatas";
-
-const IndexPage = ({ posts, title, description, ...props }) => (
+// type Props = { posts: any; title: any; description: any; props: any };
+const IndexPage = ({ posts, title, description }) => (
   <div>
     <Head>
       <link

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Style from "./style/PostList.module.sass";
 // import showpostsimg from "./ShowPostsImg";
 // import Image from "next/image";
-import Debug from "debug";
+// import Debug from "debug";
 // const debug = Debug("dev:Post_lists");
 
 export default function PostList({ posts }) {
@@ -16,6 +16,10 @@ export default function PostList({ posts }) {
   //   posts[j] = tmp;
   // }
   // debug(posts);
+  // for (var i = posts.length - 1; i > 0; i--) {
+  //   var rand = Math.floor(Math.random() * (i + 1));
+  //   [posts[i], posts[rand]] = [posts[rand], posts[i]];
+  // }
 
   return (
     <div>
