@@ -3,19 +3,19 @@ import Style from "./style/PostList.module.sass";
 // import showpostsimg from "./ShowPostsImg";
 // import Image from "next/image";
 import Debug from "debug";
-const debug = Debug("dev:Post_lists");
+// const debug = Debug("dev:Post_lists");
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
   // postsのリストをランダムにsortするところ;
-  debug(posts);
+  // debug(posts);
   // for (let i = posts.length - 1; i > 0; i--) {
   //   var j = Math.floor(Math.random() * (i + 1));
   //   var tmp = posts[i];
   //   posts[i] = posts[j];
   //   posts[j] = tmp;
   // }
-  debug(posts);
+  // debug(posts);
 
   return (
     <div>
