@@ -40,29 +40,6 @@ const Layout = ({
                 } else {
                   return "N高横浜キャンパスフェスティバル";
                 }sssssssssssssssssssssssssssssss
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
               }} */}
               {title + " | N高横浜キャンパスフェスティバルWebページ"}
             </title>
@@ -83,8 +60,8 @@ const Layout = ({
             />
             <meta
               property="og:title"
-              // content={title + "| N高横浜キャンパスフェスティバルWebページ"}
-              content="No title"
+              content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+              // content="No title"
             />
             <meta name="twitter:description" content="No body" />
             <meta
@@ -93,7 +70,7 @@ const Layout = ({
             />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@mochi_749" />
-            <meta property="og:site_name" content="No title" />
+            {/* <meta property="og:site_name" content="No title" /> */}
             <meta property="og:locale" content="ja_JP" />
             <link
               href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
