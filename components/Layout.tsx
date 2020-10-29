@@ -60,7 +60,7 @@ const Layout = ({
             />
             <meta
               property="og:title"
-              content={title + "| N高横浜キャンパスフェスティバルWebページ"}
+              content={title + " | N高横浜キャンパスフェスティバルWebページ"}
               // content="No title"
             />
             {/* <meta name="twitter:description" content="No body" /> */}
