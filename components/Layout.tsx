@@ -34,6 +34,13 @@ const Layout = ({
         return (
           <Head>
             <title>
+              {/* {() => {
+                if (title) {
+                  return title + " | N高横浜キャンパスフェスティバル";
+                } else {
+                  return "N高横浜キャンパスフェスティバル";
+                }
+              }} */}
               {title + " | N高横浜キャンパスフェスティバルWebページ"}
             </title>
             <meta charSet="utf-8" />
