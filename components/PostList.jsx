@@ -23,9 +23,7 @@ export default function PostList({ posts }) {
 
   return (
     <div>
-      <h1 className="text-3xl font-semibold my-6 md:text-5xl">
-        横浜キャンパスの生徒が作った作品集
-      </h1>
+      <h1 className="text-3xl font-bold my-6 md:text-5xl">作品集</h1>
       <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
       <hr />
       {!posts && <div>何もありません！</div>}
@@ -68,7 +66,7 @@ export default function PostList({ posts }) {
                             {post.frontmatter.title}
                           </h2>
                         </a>
-                        <p className="text-gray-900 text-left pt-1">
+                        <p className=" text-left pt-1 hover_bulue">
                           {post.frontmatter.author}
                           が書きました
                         </p>

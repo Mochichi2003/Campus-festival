@@ -12,7 +12,7 @@ const debug = Debug("dev:time");
 dayjs.locale("ja");
 // moment().locale("ja");
 class RemainingTime extends React.Component {
-  //  TODO  カウントダウンを表示するようにする
+  //  - []TODO  カウントダウンを表示するようにする
   eventDate: any;
   timerID: any;
   time: any;
