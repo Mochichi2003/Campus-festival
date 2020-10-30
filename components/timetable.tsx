@@ -9,8 +9,8 @@ import styles from "./style/timetable.module.scss";
 // };
 
 const ListItem = () => (
-  <div>
-    <h3 className="text-5xl font-bold my-8">タイムテーブル</h3>
+  <div className="border-t">
+    <h3 className="text-5xl  font-bold my-8">タイムテーブル</h3>
     <div>
       {/* <table className="table-auto w-full mx-0 my-8 text-left">
       <thead>
