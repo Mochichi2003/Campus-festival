@@ -115,7 +115,7 @@ class RemainingTime extends React.Component {
 
 export default function countdowntimer() {
   return (
-    <div className={styles.main}>
+    <div className={styles.main + " "}>
       <div className="text-lg p-3">
         {/* <Link href="/">
           <a className=" duration-150 text-gray-200">戻る</a>
