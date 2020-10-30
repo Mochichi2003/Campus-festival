@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 // import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 import Header from "./header";
 // import { Container } from "react-bootstrap";
 import styles from "./style/Layout.module.sass";
@@ -152,13 +153,23 @@ const Layout = ({
           <div>
             <hr />
             <footer className={styles.fotter}>
-              <small>
-                このサイトは&nbsp;
-                <span className="text-blue-700">
-                  <a href="https://github.com/Mochichi2003">Mochi</a>
+              <div className="m-auto flex">
+                <p>このサイトは&nbsp;</p>
+                <span className="text-blue-700 flex">
+                  <a className="flex" href="https://github.com/Mochichi2003">
+                    <span className="flex-wrap border-2 flex w-16 top-auto rounded-full">
+                      {/* <Image
+                        className="rounded-full"
+                        src="/foottericon/44772513-1.png"
+                        width={460}
+                        height={460}
+                      /> */}
+                    </span>
+                    <p>Mochi</p>
+                  </a>
                 </span>
-                が作りました
-              </small>
+                <p>が作りました</p>
+              </div>
             </footer>
           </div>
         );
