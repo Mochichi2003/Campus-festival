@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 // import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Header from "./header";
 // import { Container } from "react-bootstrap";
 import styles from "./style/Layout.module.sass";
