@@ -35,7 +35,7 @@ module.exports = {
       },
     ], // should add ".ts" if typescript project
     "no-use-before-define": [
-      "warn",
+      "off",
       {
         functions: true,
         classes: false,
