@@ -1,2 +1,4 @@
 out/
 .history
+yarn.lock
+yarn-error.log
