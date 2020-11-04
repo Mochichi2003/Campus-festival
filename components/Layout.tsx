@@ -153,22 +153,12 @@ const Layout = ({
           <div>
             <hr />
             <footer className={styles.fotter}>
-              <div className="m-auto flex">
-                <p>このサイトは&nbsp;</p>
-                <span className="text-blue-700 flex">
-                  <a className="flex" href="https://github.com/Mochichi2003">
-                    <span className="flex-wrap border-2 flex w-16 top-auto rounded-full">
-                      {/* <Image
-                        className="rounded-full"
-                        src="/foottericon/44772513-1.png"
-                        width={460}
-                        height={460}
-                      /> */}
-                    </span>
-                    <p>Mochi</p>
-                  </a>
+              <div>
+                このサイトは&nbsp;
+                <span className="text-blue-700">
+                  <a href="https://github.com/Mochichi2003">Mochi</a>
                 </span>
-                <p>が作りました</p>
+                が作りました
               </div>
             </footer>
           </div>
