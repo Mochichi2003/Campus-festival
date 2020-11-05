@@ -109,7 +109,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           <div className="markdownBody">
             <div
               style={{ width: "100%" }}
-              dangerouslySetInnerHTML={{ __html: marked(markdownBody) }}
+              dangerouslySetInnerHTML={{
+                __html: marked(markdownBody),
+              }}
             />
           </div>
         </div>
