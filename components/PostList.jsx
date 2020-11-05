@@ -83,8 +83,9 @@ export default function PostList({ posts }) {
       <h1 className="text-3xl font-bold my-6 md:text-5xl">作品集</h1>
       <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
       <hr />
+
       {!posts && <div>何もありません！</div>}
-      <ul className={Style.postlistview}>
+      <div className={Style.postlistview}>
         {/* <div>{JSON.stringify(posts)}</div> */}
         {posts &&
           posts.map((post) => {
@@ -94,7 +95,7 @@ export default function PostList({ posts }) {
               </>
             );
           })}
-      </ul>
+      </div>
     </div>
   );
 }

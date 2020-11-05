@@ -29,11 +29,11 @@ export default function header({ HasHeaderMargin }: Props) {
               <p>live</p>
             </Link>
           </div> */}
-          {/* <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-lg px-2  py-0 m-0 sss:m-1">
-            <Link href="/postdatas">
-              <p>生徒の作品集</p>
+          <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-lg px-2  py-0 m-0 sss:m-1">
+            <Link href="/post">
+              <p>web展示</p>
             </Link>
-          </div> */}
+          </div>
         </nav>
 
         {/* <div className={styles.header_margin + " h-64 w-screen"}></div> */}

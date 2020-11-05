@@ -4,7 +4,7 @@ import React from "react";
 import matter from "gray-matter";
 
 // import style from "../style/index.module.sass";
-import Postlist from "../components/PostList";
+// import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
@@ -19,11 +19,11 @@ const IndexPage = ({ posts, title, description }) => (
         rel="stylesheet"
       />
     </Head>
-    <Layout showFotter={false} showHeader={false}></Layout>
+    <Layout showFotter={false} showHeader={true}></Layout>
     <CountdownTimer />
     <Layout
       title="Home"
-      showFotter={false}
+      showFotter={true}
       showHeader={false}
       // NotShowHederAndFooter="true"
     >
@@ -36,6 +36,17 @@ const IndexPage = ({ posts, title, description }) => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
+        <div>
+          <iframe
+            width="100%"
+            height="659"
+            src="https://www.youtube.com/embed/02azSAMtZWU"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <Timeteble />
+        </div>
         {/* <div>ここにタイムテーブルを入れる</div> */}
 
         {/* <div className="border">
@@ -55,16 +66,14 @@ const IndexPage = ({ posts, title, description }) => (
             展示物一覧
             </a>
           </Link> */}
-          <Postlist posts={posts} />
+          {/* <Postlist posts={posts} /> */}
         </div>
-        <div>
-          <Timeteble />
-        </div>
+
         {/* <Postdatas /> */}
       </div>
     </Layout>
 
-    <Layout showHeader={false} showFotter={true} useHead={false}></Layout>
+    {/* <Layout showHeader={false} showFotter={true} useHead={false}></Layout> */}
     {/* <CountdownTimer /> */}
   </div>
 );
