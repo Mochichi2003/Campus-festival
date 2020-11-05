@@ -56,10 +56,24 @@ const PostLIstWindow = (post) => {
   );
 };
 
+function ProjectNPost(post) {
+  return (
+    <div>
+      {/* {JSON.stringify(post.post.frontmatter)} */}
+      {(() => {
+        if (post.post.frontmatter.proN) {
+          return <PostLIstWindow post={post.post} />;
+        }
+      })()}
+
+      {/* <hr /> */}
+    </div>
+  );
+}
 function Studentposts(post) {
   return (
     <div>
-      {JSON.stringify(post.post.frontmatter)}
+      {/* {JSON.stringify(post.post.frontmatter)} */}
       {(() => {
         if (!post.post.frontmatter.proN) {
           return <PostLIstWindow post={post.post} />;
@@ -70,17 +84,35 @@ function Studentposts(post) {
     </div>
   );
 }
+// プロNとか諸々の選択をしたりタイトルを取得したりするところ
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-
   return (
     <div>
+      {/* プロNのところの投稿のところ */}
+      <div>
+        <h1 className="text-3xl font-bold my-6 md:text-5xl">ProjectN</h1>
+        <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
+        <hr />
+        {!posts && <div>何もありません！</div>}
+        <div className={Style.postlistview}>
+          {/* <div>{JSON.stringify(posts)}</div> */}
+          {posts &&
+            posts.map((post) => {
+              return (
+                <>
+                  <ProjectNPost post={post} />
+                </>
+              );
+            })}
+        </div>
+      </div>
+      {/* 各生徒の投稿のところ */}
       <div>
         <h1 className="text-3xl font-bold my-6 md:text-5xl">生徒の作品集</h1>
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
-
         {!posts && <div>何もありません！</div>}
         <div className={Style.postlistview}>
           {/* <div>{JSON.stringify(posts)}</div> */}
