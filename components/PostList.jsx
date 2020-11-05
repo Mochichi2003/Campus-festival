@@ -68,7 +68,7 @@ export default function PostList({ posts }) {
                         </a>
                         <p className=" text-left pt-1 hover_bulue">
                           {post.frontmatter.author}
-                          が書きました
+                          {/* が書きました */}
                         </p>
                       </div>
                     </div>
