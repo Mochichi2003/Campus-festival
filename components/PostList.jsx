@@ -85,7 +85,7 @@ export default function PostList({ posts }) {
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
         {!posts && <div>何もありません！</div>}
-        <div className={Style.postlistview}>
+        <div className={Style.postlistview + " postlistContainer"}>
           {/* <div>{JSON.stringify(posts)}</div> */}
           {posts &&
             posts.map((post) => {
