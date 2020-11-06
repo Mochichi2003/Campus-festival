@@ -14,6 +14,11 @@ module.exports = {
     "./pages/**/*.js",
   ],
   theme: {
+    maxHeight: {
+      "85vh": "85vh",
+      full: "100%",
+    },
+    scale: { 103: "1.03" },
     maxWidth: {
       1: "1rem",
       2: "2rem",

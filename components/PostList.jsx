@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Style from "./style/PostList.module.sass";
+
 // import showpostsimg from "./ShowPostsImg";
 // import Image from "next/image";
 // import Debug from "debug";
@@ -7,16 +8,25 @@ import Style from "./style/PostList.module.sass";
 const PostLIstWindow = (post) => {
   return (
     <Link
+      className=""
       href={{
         pathname: `/post/${post.post.slug}`, // 投稿したやつのりんく
       }}
     >
-      <div className="sm:w-2/4 px-6 py-2 ">
+      <div className="w-full sm:w-2/4 px-6 py-2 ">
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
-        <div className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-105">
+        <div
+          className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-105 h-full"
+          style={{ height: "100%" }}
+        >
           <img
-            className="w-full"
-            src={post.post.frontmatter.img || "/performer_img/noimage.png"}
+            width={600}
+            height={340}
+            className="w-full border-4 postImgs border-gray-700 rounded "
+            src={
+              post.post.frontmatter.img ||
+              "/performer_img/postlist_noimgs_アートボード 1.png"
+            }
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4 pb-6 ">
@@ -30,49 +40,6 @@ const PostLIstWindow = (post) => {
         </div>
         <p></p>
       </div>
-
-      {/* <div
-          className={
-            Style.PostList +
-            " border-solid border rounded-lg border-gray-300   "
-          }
-          key={post.post.slug}
-        >
-          <div>
-            <div className="postbtns    flex">
-              <div className=" text-gray-700 text-center   ">
-                {(() => {
-                  if (post.post.frontmatter.img) {
-                    // return <span>Good morning</span>;
-                    return (
-                      <div className="max-w-10 max-h-10 items-center   flex-row">
-                        <img
-                          src={post.post.frontmatter.img}
-                          alt="アイコン画像"
-                          className={
-                            Style.postlisticonimg +
-                            "  border-gray-300 border m-2 rounded"
-                          }
-                          style={{}}
-                        />
-                      </div>
-                    );
-                  }
-                })()}
-              </div>
-              <div className="p-3 sm:p-4 px-4 py-2">
-                <a>
-                  <h2 className=" md:text-3xl text-left text-2xl font-bold">
-                    {post.post.frontmatter.title}
-                  </h2>
-                </a>
-                <p className=" text-left pt-1 hover_bulue">
-                  {post.post.frontmatter.author}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
     </Link>
   );
 };

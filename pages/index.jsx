@@ -37,16 +37,17 @@ const IndexPage = ({ posts, title, description }) => (
         Ykohama campus festival
       </h1> */}
       <div className="my-2 text-lg text-center	">
-        <div>
+        <Timeteble />
+        <div className="movie-wrap">
           <iframe
+            className=""
             width="100%"
             height="300"
-            src="https://www.youtube.com/embed/02azSAMtZWU"
+            src="https://www.youtube.com/embed/vI4LHl4yFuo"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-          <Timeteble />
         </div>
         <div>
           {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./style/timetable.module.scss";
+// import styles from "./style/timetable.module.scss";
 // import Link from "next/link";
 
 // import { User } from "../interfaces";
@@ -10,7 +10,7 @@ import styles from "./style/timetable.module.scss";
 
 const ListItem = () => (
   <div className="border-t">
-    <h3 className="text-5xl  font-bold my-8">タイムテーブル</h3>
+    <h3 className="text-4xl  font-bold my-8">タイムテーブル</h3>
     <div>
       {/* <table className="table-auto w-full mx-0 my-8 text-left">
       <thead>
@@ -47,140 +47,13 @@ const ListItem = () => (
     </div>
 
     {/* 使う方 */}
-    <table className="table-auto w-full mx-0 my-8 text-left bg-white ">
-      <thead>
-        <tr
-          className={
-            "bg-white hover: border-b hover:border-b-4 duration-300 " +
-            styles.testtt
-          }
-        >
-          <th className=" px-4  border-gray-400 py-3">時間 </th>
-          <th className=" px-4  border-gray-400 py-3">題目</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          className={
-            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 13:00〜13:02 */}
-            13:00〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            オープニング
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-white hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 13:07〜13:27 */}
-            13:07〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            バンド①
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-gray-200  border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 13:32〜13:52 */}
-            13:32〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            バンド②
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-white hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 14:02〜14:12 */}
-            14:02〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            ダンス
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 14:17〜14:47 */}
-            14:17〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            ミス・ミスターコンテスト
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-white hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 14:52〜15:17 */}
-            14:52〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            スプラトゥーン決勝戦
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-gray-200 hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 14:22〜15:37 */}
-            14:22〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            のど自慢
-          </td>
-        </tr>
-
-        <tr
-          className={
-            "bg-white hover: border-b hover:border-b-4  border-gray-400  duration-300 " +
-            styles.testtt
-          }
-        >
-          <td className="  px-4 py-3" valign="bottom">
-            {/* 15:42〜15:44 */}
-            15:42〜
-          </td>
-          <td className="  px-4 py-3" valign="bottom">
-            エンディング
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="text-center my-4">
+      <img
+        src="timetable/名称未設定-dddddddddddddddddddddddddddddd2_アートボード 1.png"
+        alt="タイムテーブル"
+        className="max-h-85vh border m-auto"
+      />
+    </div>
   </div>
 );
 
