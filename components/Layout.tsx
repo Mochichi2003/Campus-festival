@@ -7,6 +7,7 @@ import Header from "./header";
 import styles from "./style/Layout.module.sass";
 type Props = {
   children?: ReactNode;
+  iswebPresentation?: boolean;
   title?: string;
   NotShowHederAndFooter?: boolean | "true";
   showHeader?: boolean;
@@ -18,6 +19,7 @@ type Props = {
 // class hederAndFooterAndContainer extends React.Component {}
 
 const Layout = ({
+  iswebPresentation,
   children,
   title,
   useHead,
@@ -122,7 +124,12 @@ const Layout = ({
         // return <span>Good morning</span>;
         return <span></span>;
       } else {
-        return <Header HasHeaderMargin={HasHeaderMargin} />;
+        return (
+          <Header
+            HasHeaderMargin={HasHeaderMargin}
+            iswebPresentation={iswebPresentation}
+          />
+        );
       }
     })()}
 

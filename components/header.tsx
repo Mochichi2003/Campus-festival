@@ -6,8 +6,9 @@ import styles from "./style/header.module.sass";
 import Link from "next/link";
 type Props = {
   HasHeaderMargin?: boolean;
+  iswebPresentation?: boolean;
 };
-export default function header({ HasHeaderMargin }: Props) {
+export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
   return (
     <>
       <div className="fixed top-0 left-0 z-50">
@@ -29,7 +30,18 @@ export default function header({ HasHeaderMargin }: Props) {
               <p>live</p>
             </Link>
           </div> */}
-          <div className="text-gray-400  rounded-lg cursor-pointer duration-300 hover:text-white text-center  text-base sss:text-lg px-2  py-0 m-0 sss:m-1">
+          <div
+            className={
+              "  rounded-lg cursor-pointer duration-300  text-center  text-base sss:text-lg px-2  py-0 m-0 sss:m-1" +
+              (() => {
+                if (iswebPresentation) {
+                  return " text-white";
+                } else {
+                  return " text-gray-400 hover:text-white";
+                }
+              })()
+            }
+          >
             <Link href="/post">
               <p>web展示</p>
             </Link>
