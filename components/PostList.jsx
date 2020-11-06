@@ -11,54 +11,75 @@ const PostLIstWindow = (post) => {
         pathname: `/post/${post.post.slug}`, // 投稿したやつのりんく
       }}
     >
-      <div
-        className={
-          Style.PostList + " border-solid border rounded-lg border-gray-300   "
-        }
-        key={post.post.slug}
-      >
-        <div>
-          <div className="postbtns    flex">
-            <div className=" text-gray-700 text-center   ">
-              {(() => {
-                if (post.post.frontmatter.img) {
-                  // return <span>Good morning</span>;
-                  return (
-                    <div className="max-w-10 max-h-10 items-center   flex-row">
-                      <img
-                        src={post.post.frontmatter.img}
-                        alt="アイコン画像"
-                        className={
-                          Style.postlisticonimg +
-                          "  border-gray-300 border m-2 rounded"
-                        }
-                        style={{}}
-                      />
-                    </div>
-                  );
-                }
-              })()}
+      <div className="sm:w-2/4 px-6 py-2 ">
+        {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
+        <div className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-105">
+          <img
+            className="w-full"
+            src={post.post.frontmatter.img || "/performer_img/noimage.png"}
+            alt="Sunset in the mountains"
+          />
+          <div className="px-6 py-4 pb-6 ">
+            <div className="font-bold text-xl mb-2">
+              {post.post.frontmatter.title}
             </div>
-            <div className="p-3 sm:p-4 px-4 py-2">
-              <a>
-                <h2 className=" md:text-3xl text-left text-2xl font-bold">
-                  {post.post.frontmatter.title}
-                </h2>
-              </a>
-              <p className=" text-left pt-1 hover_bulue">
-                {post.post.frontmatter.author}
-              </p>
-            </div>
+            <p className="text-grey-darker text-base">
+              {post.post.frontmatter.author}
+            </p>
           </div>
         </div>
+        <p></p>
       </div>
+
+      {/* <div
+          className={
+            Style.PostList +
+            " border-solid border rounded-lg border-gray-300   "
+          }
+          key={post.post.slug}
+        >
+          <div>
+            <div className="postbtns    flex">
+              <div className=" text-gray-700 text-center   ">
+                {(() => {
+                  if (post.post.frontmatter.img) {
+                    // return <span>Good morning</span>;
+                    return (
+                      <div className="max-w-10 max-h-10 items-center   flex-row">
+                        <img
+                          src={post.post.frontmatter.img}
+                          alt="アイコン画像"
+                          className={
+                            Style.postlisticonimg +
+                            "  border-gray-300 border m-2 rounded"
+                          }
+                          style={{}}
+                        />
+                      </div>
+                    );
+                  }
+                })()}
+              </div>
+              <div className="p-3 sm:p-4 px-4 py-2">
+                <a>
+                  <h2 className=" md:text-3xl text-left text-2xl font-bold">
+                    {post.post.frontmatter.title}
+                  </h2>
+                </a>
+                <p className=" text-left pt-1 hover_bulue">
+                  {post.post.frontmatter.author}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> */}
     </Link>
   );
 };
 
 function ProjectNPost(post) {
   return (
-    <div>
+    <>
       {/* {JSON.stringify(post.post.frontmatter)} */}
       {(() => {
         if (post.post.frontmatter.proN) {
@@ -67,12 +88,13 @@ function ProjectNPost(post) {
       })()}
 
       {/* <hr /> */}
-    </div>
+    </>
   );
 }
+
 function Studentposts(post) {
   return (
-    <div>
+    <>
       {/* {JSON.stringify(post.post.frontmatter)} */}
       {(() => {
         if (!post.post.frontmatter.proN) {
@@ -81,7 +103,7 @@ function Studentposts(post) {
       })()}
 
       {/* <hr /> */}
-    </div>
+    </>
   );
 }
 // プロNとか諸々の選択をしたりタイトルを取得したりするところ
@@ -116,7 +138,7 @@ export default function PostList({ posts }) {
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
         {!posts && <div>何もありません！</div>}
-        <div className={Style.postlistview}>
+        <div className={Style.postlistview + " postlistContainer"}>
           {/* <div>{JSON.stringify(posts)}</div> */}
           {posts &&
             posts.map((post) => {

@@ -3,3 +3,7 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+.postlistContainer {
+  @apply flex flex-row flex-wrap justify-start ;
+}
