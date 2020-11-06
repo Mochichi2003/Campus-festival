@@ -92,7 +92,7 @@ export default function PostList({ posts }) {
     <div>
       {/* プロNのところの投稿のところ */}
       <div>
-        <h1 className="text-3xl font-bold my-6 md:text-5xl">ProjectN</h1>
+        <h1 className="text-3xl font-bold my-6 md:text-5xl px-8">ProjectN</h1>
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
         {!posts && <div>何もありません！</div>}
@@ -110,7 +110,9 @@ export default function PostList({ posts }) {
       </div>
       {/* 各生徒の投稿のところ */}
       <div>
-        <h1 className="text-3xl font-bold my-6 md:text-5xl">生徒の作品集</h1>
+        <h1 className="text-3xl font-bold my-6 md:text-5xl px-8">
+          生徒の作品集
+        </h1>
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
         {!posts && <div>何もありません！</div>}

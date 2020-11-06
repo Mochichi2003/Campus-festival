@@ -8,6 +8,7 @@ import matter from "gray-matter";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
+import Performerintroduction from "../components/Performerintroduction";
 // import { type } from "os";
 // import Postdatas from "../components/postdatas";
 // type Props = { posts: any; title: any; description: any; props: any };
@@ -47,27 +48,15 @@ const IndexPage = ({ posts, title, description }) => (
           ></iframe>
           <Timeteble />
         </div>
+        <div>
+          {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}
+          <Performerintroduction>
+            {/* <h3>チルドレンのやつうううううううううう</h3> */}
+          </Performerintroduction>
+        </div>
         {/* <div>ここにタイムテーブルを入れる</div> */}
 
-        {/* <div className="border">
-          <iframe
-          width="560"
-          height="315"
-            src="https://www.youtube.com/embed/nRJpbbRe-70"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full m-10"
-            ></iframe>
-          </div> */}
-        <div className="my-8">
-          {/* <Link href="./postdatas">
-            <a className="text-white no-underline hover:no-underline text-2xl  font-semibold bg-blue-500 py-4 rounded px-12 hover:bg-blue-400 duration-300 hover:scale-105">
-            展示物一覧
-            </a>
-          </Link> */}
-          {/* <Postlist posts={posts} /> */}
-        </div>
+        <div className="my-8"></div>
 
         {/* <Postdatas /> */}
       </div>
