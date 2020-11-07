@@ -16,13 +16,13 @@ const PostLIstWindow = (post) => {
       <div className="w-full sm:w-2/4 px-6 py-6 ">
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
         <div
-          className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full"
+          className="max-w-xs select-none   rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full"
           style={{ height: "100%" }}
         >
           <img
             width={600}
             height={340}
-            className="w-full border-4 postImgs border-gray-700 rounded "
+            className="w-full  postImgs border-b-2 border-gray-700   border-opacity-75"
             src={
               post.post.frontmatter.img ||
               "/performer_img/postlist_noimgs_アートボード 1.png"
@@ -30,7 +30,7 @@ const PostLIstWindow = (post) => {
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4 pb-6 ">
-            <div className="font-bold text-xl mb-2">
+            <div className="font-bold text-xl  mb-2">
               {post.post.frontmatter.title}
             </div>
             <p className="text-grey-darker text-base">

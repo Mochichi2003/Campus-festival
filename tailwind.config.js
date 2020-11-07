@@ -18,7 +18,7 @@ module.exports = {
       "85vh": "85vh",
       full: "100%",
     },
-    scale: { 103: "1.03" },
+    scale: { 103: "1.03", 105: "1.05", 125: "1.25" },
     maxWidth: {
       1: "1rem",
       2: "2rem",
