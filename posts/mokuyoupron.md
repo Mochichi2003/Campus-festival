@@ -1,6 +1,6 @@
 ---
 title: "👑10月木曜プロN優秀作品👑"
-author: "<p>このサイトを作ってる人に向けて</p>"
+author: ""
 # url: "自分のページがあればここにURL入れてください"
 img: "/posts_icon/projectN/ProjectN.png"
 proN: true
