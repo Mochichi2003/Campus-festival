@@ -67,7 +67,6 @@ class GetAppiData extends React.Component {
         // always executed
       });
   }
-  
 
   getaxios() {
     // console.log("取得しようとしています");
