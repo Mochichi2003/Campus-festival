@@ -14,11 +14,11 @@ type CardProps = {
 
 const Cards = ({ titel, body, img }: CardProps) => {
   return (
-    <div className="sm:w-2/4 px-6 py-2 ">
+    <div className="sm:w-2/4 md:w-1/3 px-6 py-2 ">
       {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
       <div className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103">
         <img
-          className="w-full border-4 border-gray-700 rounded"
+          className="w-full  border-gray-700 "
           src={img}
           alt="Sunset in the mountains"
         />
@@ -40,47 +40,47 @@ const PerformerIntroduction = () => {
         <Cards
           titel="タイトルです1"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ\n\nカキクケコ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです2"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです3"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです4"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです5"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです6"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです7"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです8"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
         <Cards
           titel="タイトルです9"
           body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/postlist_noimgs_アートボード 1.png"
+          img="/performer_img/noimage.png"
         />
       </div>
     </div>

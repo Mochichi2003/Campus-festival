@@ -1,6 +1,6 @@
 ---
 title: "やることおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお"
-author: "<p>このサイトを作ってる人に向けて</p>"
+author: "このサイトを作ってる人に向けて"
 # url: "自分のページがあればここにURL入れてください"
 img: "/posts_icon/download-2.png"
 proN: true
