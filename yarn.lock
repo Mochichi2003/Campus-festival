@@ -1145,6 +1145,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@danestves/tailwindcss-darkmode@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@danestves/tailwindcss-darkmode/-/tailwindcss-darkmode-1.1.5.tgz#862c68bc39e7c2920d721c51314a1d5a7133bad4"
+  integrity sha512-rH/GCaCrZFw6rMr/CjhnNL60uN5CK8yp3zsaQNwen2TTDWmfWz++w/clo1FR4OBr1hrAGYpjukV3oCLZRW8KKg==
+  dependencies:
+    tailwindcss "^1.2.0"
+
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.1.tgz#f72069c330461a06684d119384435e12a5d76e3c"
@@ -9961,7 +9968,7 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@^1.8.10:
+tailwindcss@^1.2.0, tailwindcss@^1.8.10:
   version "1.9.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.9.6.tgz#0c5089911d24e1e98e592a31bfdb3d8f34ecf1a0"
   integrity sha512-nY8WYM/RLPqGsPEGEV2z63riyQPcHYZUJpAwdyBzVpxQHOHqHE+F/fvbCeXhdF1+TA5l72vSkZrtYCB9hRcwkQ==

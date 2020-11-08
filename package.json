@@ -48,6 +48,7 @@
     "*.": "prettier --write ."
   },
   "devDependencies": {
+    "@danestves/tailwindcss-darkmode": "^1.1.5",
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.12.21",

@@ -26,13 +26,28 @@ const PostLIstWindow = (post) => {
           className="max-w-xs select-none   rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full"
           style={{ height: "100%" }}
         >
-          <img
+          {(() => {
+            if (post.post.frontmatter.img) {
+              return (
+                <img
+                  width={600}
+                  height={340}
+                  className="w-full  postImgs border-b-2 border-gray-700   border-opacity-75"
+                  src={
+                    post.post.frontmatter.img || "/performer_img/noimage.png"
+                  }
+                  alt="Sunset in the mountains"
+                />
+              );
+            }
+          })()}
+          {/* <img
             width={600}
             height={340}
             className="w-full  postImgs border-b-2 border-gray-700   border-opacity-75"
             src={post.post.frontmatter.img || "/performer_img/noimage.png"}
             alt="Sunset in the mountains"
-          />
+          /> */}
           <div className="px-6 py-4 pb-6 ">
             <div className="font-bold text-2xl  mb-2">
               {post.post.frontmatter.title}
