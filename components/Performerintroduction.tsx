@@ -14,9 +14,9 @@ type CardProps = {
 
 const Cards = ({ titel, body, img }: CardProps) => {
   return (
-    <div className="sm:w-2/4 md:w-1/3 px-6 py-2 ">
+    <div className="w-full sm:w-2/4 md:w-1/3 px-6 py-2 ">
       {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
-      <div className="max-w-xs select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103">
+      <div className=" select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103">
         <img
           className="w-full  border-gray-700 "
           src={img}

@@ -13,6 +13,7 @@ const PostLIstWindow = (post) => {
         pathname: `/post/${post.post.slug}`, // 投稿したやつのりんく
       }}
     >
+      {/* <a href={{pathname: `/post/${post.post.slug}`}}></a> */}
       <div
         style={{
           order: (() => {
@@ -23,7 +24,7 @@ const PostLIstWindow = (post) => {
       >
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
         <div
-          className="max-w-xs select-none   rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full"
+          className="max-w-xs select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full border border-gray-400"
           style={{ height: "100%" }}
         >
           {(() => {

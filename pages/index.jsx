@@ -2,7 +2,7 @@
 import Head from "next/head";
 import React from "react";
 import matter from "gray-matter";
-
+import Link from "next/link";
 // import style from "../style/index.module.sass";
 // import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
@@ -28,6 +28,16 @@ const IndexPage = ({ posts, title, description }) => (
       showHeader={false}
       // NotShowHederAndFooter="true"
     >
+      <div className="  m-12 text-center">
+        <Link href="/post">
+          <a
+            href="/post"
+            className="bg-cornflowerblue-500 w-full text-lg rounded-lg text-white p-4 m-8 mt-24"
+          >
+            web展示を見る
+          </a>
+        </Link>
+      </div>
       {/* <h1
         className={
           style.topicon +
@@ -49,8 +59,10 @@ const IndexPage = ({ posts, title, description }) => (
             allowFullScreen
           ></iframe>
         </div>
+
         <div>
           {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}
+
           <Performerintroduction>
             {/* <h3>チルドレンのやつうううううううううう</h3> */}
           </Performerintroduction>
