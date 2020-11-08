@@ -45,27 +45,61 @@ class GetAppiData extends React.Component {
     this.getaxios = this.getaxios.bind(this);
   }
 
-  getaxios() {
-    console.log("取得しようとしています");
-    this.setState(async () => {
-      await axios
-        .get("/api/test")
-        .then(function (response) {
+  async getData() {
+    axios
+      .get("/api/test")
+      .then(
+        await function (response) {
           // handle success
           console.log("正常に帰ってきまし");
 
           console.log(response.data.name);
-          this.getaxios_value = response.data.name;
+          // this.getaxios_value = "response.data.name";
           // return <p>response.data.name</p>;
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
-        .then(function () {
-          // always executed
-        });
-    });
+          return "こんちゃあああああああああ";
+        }
+      )
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  }
+  
+
+  getaxios() {
+    // console.log("取得しようとしています");
+    // axios
+    //   .get("/api/test")
+    //   .then(function (response) {
+    //     console.log("取得できました" + response.data.name);
+    //   })
+    //   .catch(function (err) {
+    //     console.log(err);
+    //   })
+    //   .then(function (err) {
+    //     console.log(err + " err ");
+    //   });
+    this.setState((state) => ({
+      getaxios_value: {
+        function() {
+          axios
+            .get("/api/test")
+            .then(function (response) {
+              console.log("取得できました" + response.data.name);
+              return JSON.stringify(response.data.name);
+            })
+            .catch(function (err) {
+              console.log(err);
+            })
+            .then(function (err) {
+              console.log(err);
+            });
+        },
+      },
+    }));
   }
 
   handleClick() {
