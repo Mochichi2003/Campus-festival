@@ -155,10 +155,10 @@ const Layout = ({
         return (
           <div>
             <hr />
-            <footer className={styles.fotter}>
+            <footer className={styles.fotter + " "}>
               <div>
                 このサイトは&nbsp;
-                <span className="text-blue-700">
+                <span className="text-cornflowerblue-400">
                   <a href="https://github.com/Mochichi2003">Mochi</a>
                 </span>
                 が作りました
