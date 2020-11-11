@@ -9,6 +9,7 @@ import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
 import Performerintroduction from "../components/Performerintroduction";
+import Posetest from "../components/posetest";
 // import { type } from "os";
 // import Postdatas from "../components/postdatas";
 // type Props = { posts: any; title: any; description: any; props: any };
@@ -62,7 +63,7 @@ const IndexPage = ({ posts, title, description }) => (
 
         <div>
           {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}
-
+          <Posetest />
           <Performerintroduction>
             {/* <h3>チルドレンのやつうううううううううう</h3> */}
           </Performerintroduction>
