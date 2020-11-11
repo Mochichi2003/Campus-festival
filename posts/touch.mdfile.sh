@@ -1,4 +1,4 @@
-for i in {17..30}
+for i in {23..30}
 do
   # touch "10${i}.md"
   rm 10${i}.md 
