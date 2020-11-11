@@ -16,9 +16,9 @@ const PostLIstWindow = (post) => {
       {/* <a href={{pathname: `/post/${post.post.slug}`}}></a> */}
       <div
         style={{
-          order: (() => {
-            return Math.floor(Math.random() * 400);
-          })(),
+          // order: (() => {
+          //   return Math.floor(Math.random() * 400);
+          // })(),
         }}
         className="w-full sm:w-2/4 md:w-1/3 px-3 py-3 sm:px-5  sm:py-5 "
       >
