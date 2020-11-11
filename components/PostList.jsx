@@ -16,9 +16,9 @@ const PostLIstWindow = (post) => {
       {/* <a href={{pathname: `/post/${post.post.slug}`}}></a> */}
       <div
         style={{
-          // order: (() => {
-          //   return Math.floor(Math.random() * 400);
-          // })(),
+          order: (() => {
+            return Math.floor(Math.random() * 400);
+          })(),
         }}
         className="w-full sm:w-2/4 md:w-1/3 px-3 py-3 sm:px-5  sm:py-5 "
       >
@@ -101,7 +101,9 @@ export default function PostList({ posts }) {
     <div>
       {/* プロNのところの投稿のところ */}
       <div>
-        <h1 className="text-3xl font-bold my-6 md:text-5xl px-8">ProjectN</h1>
+        <h1 className="text-3xl font-bold my-6 md:text-5xl px-8 font-inter">
+          ProjectN
+        </h1>
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
         <hr />
         {!posts && <div>何もありません！</div>}

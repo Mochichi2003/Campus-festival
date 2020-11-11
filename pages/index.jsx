@@ -1,7 +1,7 @@
 // import Link from "next/link";
 import Head from "next/head";
 import React from "react";
-import matter from "gray-matter";
+// import matter from "gray-matter";
 import Link from "next/link";
 // import style from "../style/index.module.sass";
 // import Postlist from "../components/PostList";
@@ -82,31 +82,31 @@ const IndexPage = ({ posts, title, description }) => (
 
 export default IndexPage;
 
-export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`);
+// export async function getStaticProps() {
+//   const configData = await import(`../siteconfig.json`);
 
-  const posts = ((context) => {
-    const keys = context.keys();
-    const values = keys.map(context);
+//   const posts = ((context) => {
+//     const keys = context.keys();
+//     const values = keys.map(context);
 
-    const data = keys.map((key, index) => {
-      const slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
-      const value = values[index];
-      const document = matter(value.default);
-      return {
-        frontmatter: document.data,
-        markdownBody: document.content,
-        slug,
-      };
-    });
-    return data;
-  })(require.context("../posts", true, /\.md$/));
+//     const data = keys.map((key, index) => {
+//       const slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
+//       const value = values[index];
+//       const document = matter(value.default);
+//       return {
+//         frontmatter: document.data,
+//         markdownBody: document.content,
+//         slug,
+//       };
+//     });
+//     return data;
+//   })(require.context("../posts", true, /\.md$/));
 
-  return {
-    props: {
-      posts,
-      title: configData.default.title,
-      description: configData.default.description,
-    },
-  };
-}
+//   return {
+//     props: {
+//       posts,
+//       title: configData.default.title,
+//       description: configData.default.description,
+//     },
+//   };
+// }
