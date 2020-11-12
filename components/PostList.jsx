@@ -17,7 +17,7 @@ const PostLIstWindow = (post) => {
       <div
         style={{
           order: (() => {
-            return Math.floor(Math.random() * 400);
+            return Math.floor(Math.random() * 4000);
           })(),
         }}
         className="w-full sm:w-2/4 md:w-1/3 px-3 py-3 sm:px-5  sm:py-5 "

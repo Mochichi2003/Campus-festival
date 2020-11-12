@@ -9,7 +9,7 @@ import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
 import Performerintroduction from "../components/Performerintroduction";
-import Posetest from "../components/posetest";
+// import Posetest from "../components/posetest";
 // import { type } from "os";
 // import Postdatas from "../components/postdatas";
 // type Props = { posts: any; title: any; description: any; props: any };
@@ -54,7 +54,7 @@ const IndexPage = ({ posts, title, description }) => (
             className=""
             width="100%"
             height="300"
-            src="https://www.youtube.com/embed/vI4LHl4yFuo"
+            src="https://www.youtube.com/embed/5qap5aO4i9A"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -63,7 +63,7 @@ const IndexPage = ({ posts, title, description }) => (
 
         <div>
           {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}
-          <Posetest />
+          {/* <Posetest /> */}
           <Performerintroduction>
             {/* <h3>チルドレンのやつうううううううううう</h3> */}
           </Performerintroduction>

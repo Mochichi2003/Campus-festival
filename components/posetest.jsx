@@ -12,17 +12,18 @@ export default function ReactPoseSample() {
   const [visible, setVisible] = useState(true);
 
   return (
-    <Box
-      style={{
-        margin: "0 auto",
-        width: 100,
-        height: 100,
-        backgroundColor: "green",
-      }}
-      pose={visible ? "visible" : "hidden"}
-      onClick={() => {
-        setVisible(!visible);
-      }}
-    />
+    <></>
+    // <Box
+    //   style={{
+    //     margin: "0 auto",
+    //     width: 100,
+    //     height: 100,
+    //     backgroundColor: "green",
+    //   }}
+    //   pose={visible ? "visible" : "hidden"}
+    //   onClick={() => {
+    //     setVisible(!visible);
+    //   }}
+    // />
   );
 }
