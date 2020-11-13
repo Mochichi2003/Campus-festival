@@ -15,11 +15,13 @@ const PostLIstWindow = (post) => {
     >
       {/* <a href={{pathname: `/post/${post.post.slug}`}}></a> */}
       <div
-        style={{
-          order: (() => {
-            return Math.floor(Math.random() * 4000);
-          })(),
-        }}
+        style={
+          {
+            // order: (() => {
+            //   return Math.floor(Math.random() * 4000);
+            // })(),
+          }
+        }
         className="w-full sm:w-2/4 md:w-1/3 px-3 py-3 sm:px-5  sm:py-5 "
       >
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}

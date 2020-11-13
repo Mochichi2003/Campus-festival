@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 // type PerformerIntroductionType = {
 //   children?: string;
 //   img: string;
@@ -14,16 +14,23 @@ type CardProps = {
 
 const Cards = ({ titel, body, img }: CardProps) => {
   return (
-    <div className="w-full sm:w-2/4  px-6 py-2 ">
+    <div className="w-full sm:w-2/4 md:w-1/3 h-full px-6 py-2 ">
       {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
-      <div className=" select-none rounded overflow-hidden shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103">
-        <img
+      <div
+        style={{
+          height: "100%",
+        }}
+        className=" select-none rounded overflow-hidden h-full shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103"
+      >
+        <Image
+          height={756}
+          width={1008}
           className="w-full  border-gray-700 "
           src={img}
           alt="Sunset in the mountains"
         />
         <div className="px-6 py-4 pb-6 ">
-          <div className="font-bold text-xl mb-2">{titel}</div>
+          <div className="font-bold text-3xl mb-2">{titel}</div>
           <p className="text-grey-darker text-base">{body}</p>
         </div>
       </div>
@@ -38,49 +45,34 @@ const PerformerIntroduction = () => {
       <h2 className="text-5xl font-semibold mb-8 mt-4">出演者紹介</h2>
       <div className=" sm:flex flex-row flex-wrap justify-start">
         <Cards
-          titel="タイトルです1"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ\n\nカキクケコ"
-          img="/performer_img/noimage.png"
+          titel="のど自慢"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (20).jpg"
         />
         <Cards
-          titel="タイトルです2"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
+          titel="ダンス"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (15).jpg"
         />
         <Cards
-          titel="タイトルです3"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
+          titel="アントラーズ"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (14).jpg"
         />
         <Cards
-          titel="タイトルです4"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
+          titel="女装男装"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (22).jpg"
         />
         <Cards
-          titel="タイトルです5"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
+          titel="スプラトゥーン大会"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (16).jpg"
         />
         <Cards
-          titel="タイトルです6"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
-        />
-        <Cards
-          titel="タイトルです7"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
-        />
-        <Cards
-          titel="タイトルです8"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
-        />
-        <Cards
-          titel="タイトルです9"
-          body="それぞれの出演者の紹介文ですよそれぞれの出演者の紹介文ですよ"
-          img="/performer_img/noimage.png"
+          titel="セカンドペンギン"
+          body=""
+          img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (13).jpg"
         />
       </div>
     </div>
