@@ -2,6 +2,7 @@ import React from "react";
 // import styles from "./style/timetable.module.scss";
 // import Link from "next/link";
 
+
 // import { User } from "../interfaces";
 
 // type Props = {
@@ -49,7 +50,7 @@ const ListItem = () => (
     {/* 使う方 */}
     <div className="text-center my-4">
       <img
-        src="timetable/名称未設定-dddddddddddddddddddddddddddddd2_アートボード 1.png"
+        src="/timetable/タイムテーブル3.jpg"
         alt="タイムテーブル"
         className="max-h-85vh border m-auto"
       />
