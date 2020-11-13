@@ -21,14 +21,14 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
           }
         >
           <Link href="/">
-            <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-xl px-2  py-0 m-1">
+            <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-xl px-2  py-0 m-0">
               <svg
                 className="fill-current sss:hidden text-white"
                 // style={
                 xmlns="http://www.w3.org/2000/svg"
-                height="40"
+                height="32"
+                width="32"
                 viewBox="0 0 24 24"
-                width="40"
               >
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
