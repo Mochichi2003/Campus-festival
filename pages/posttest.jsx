@@ -39,7 +39,10 @@ class GetAppiData extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { isToggleOn: false, getaxios_value: "何も取得されてません" };
+    this.state = {
+      isToggleOn: false,
+      getaxios_value: "何も取得されてません",
+    };
 
     this.handleClick = this.handleClick.bind(this);
     this.getaxios = this.getaxios.bind(this);

@@ -27,7 +27,9 @@ const PostLIstWindow = (post) => {
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
         <div
           className="max-w-xs select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full border border-gray-400"
-          style={{ height: "100%" }}
+          style={{
+            height: "100%",
+          }}
         >
           {(() => {
             if (post.post.frontmatter.img) {

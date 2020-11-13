@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import posed from "react-pose";
 
 const props = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0.1 },
+  visible: {
+    opacity: 1,
+  },
+  hidden: {
+    opacity: 0.1,
+  },
 };
 
 const Box = posed.div(props);

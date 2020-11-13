@@ -16,7 +16,7 @@ const Cards = ({ titel, body, img, height, width, children }: CardProps) => {
         style={{
           height: "100%",
         }}
-        className=" select-none rounded overflow-hidden h-full shadow hover:shadow-xl my-2 duration-300 transition  ease-in-out transform hover:scale-103"
+        className=" select-none rounded overflow-hidden h-full shadow  my-2 duration-300 transition  ease-in-out transform "
       >
         {(() => {
           if (height && width) {
