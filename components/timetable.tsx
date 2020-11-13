@@ -2,7 +2,6 @@ import React from "react";
 // import styles from "./style/timetable.module.scss";
 // import Link from "next/link";
 
-
 // import { User } from "../interfaces";
 
 // type Props = {
