@@ -7,11 +7,6 @@ import Cards from "./Cards";
 //   title: string;
 //   body: string;
 // };
-type CardProps = {
-  titel: string;
-  body: string;
-  img: string;
-};
 
 const PerformerIntroduction = () => {
   return (
@@ -60,6 +55,48 @@ const PerformerIntroduction = () => {
           height={756}
           width={1008}
         />
+      </div>
+      <div>
+        <h2 className="text-5xl font-semibold mb-8 mt-4">
+          キャンフェス実行委員会紹介
+        </h2>
+        <div className="sm:flex flex-row flex-wrap justify-start">
+          <Cards
+            titel="実行委員長"
+            body="横浜キャンフェス 2020 実行委員長の赤羽です！委員長として『心をひとつに』をモットーに運営・出演者・視聴者の全員が楽しめるキャンフェスをお届けします！"
+            img="/Introduction/選択項目から作成したフォルダ 2/紹介するところ/iOS の画像 (16).jpg"
+            height={756}
+            width={1008}
+          />
+          <Cards
+            titel="副実行委員長"
+            body="副実行委員長の竹内宇泉です。今年のキャンパスフェスティバルは、新型コロナウイルスの影響で予定通りにいかないことが多く、準備がとても大変でした。しかし、出演者、見てくださる生徒、保護者の皆様のおけげで、このように無事開催できることを、運営一同とても嬉しく思っております。横浜キャンパス全員で、作り上げるキャンパスフェスティバル、ぜひ楽しんでください！"
+            img="/Introduction/選択項目から作成したフォルダ 2/紹介するところ/iOS の画像 (15).jpg"
+            height={756}
+            width={1008}
+          />
+          <Cards
+            titel="ステージ班リーダー"
+            body="ステージ班リーダーの本間陸人です。コロナ禍という逆境の中だからこその、前例のない企画に携わることができて光栄に思っています。今年しかない、空前絶後の特別なキャンパスフェスティバルをお届けします！"
+            img="/Introduction/選択項目から作成したフォルダ 2/紹介するところ/iOS の画像 (14).jpg"
+            height={756}
+            width={1008}
+          />
+          <Cards
+            titel="web・装飾班リーダー"
+            body="装飾班リーダーの髙橋優太です。行事が次々に中止になっていくご時世で、N 高ならではのイベントを支えていく一翼として今年の大きな注目点であるキャンフェスを委員一同と協力し、楽しく飾って行きます！"
+            img="/Introduction/選択項目から作成したフォルダ 2/紹介するところ/iOS の画像 (13).jpg"
+            height={756}
+            width={1008}
+          />
+          <Cards
+            titel="配信担当班リーダー"
+            body="配信担当班リーダーの小島壮です。オンラインキャンフェスにおいて配信は最も重要な柱、失敗が許されない部門ということで責任を持って準備をしてきました。現地にいない方にも楽しんでいただけるような、オンラインの壁をも感じさせない一体感のあるキャンフェスを目指します！"
+            img="/Introduction/選択項目から作成したフォルダ 2/紹介するところ/iOS の画像 (13).jpg"
+            height={756}
+            width={1008}
+          />
+        </div>
       </div>
     </div>
   );

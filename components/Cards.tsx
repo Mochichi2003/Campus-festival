@@ -6,10 +6,11 @@ type CardProps = {
   img: string;
   height?: number;
   width?: number;
+  children?: React.ReactNode;
 };
-const Cards = ({ titel, body, img, height, width }: CardProps) => {
+const Cards = ({ titel, body, img, height, width, children }: CardProps) => {
   return (
-    <div className="w-full sm:w-2/4 md:w-1/3 h-full px-6 py-2 ">
+    <div style={{}} className="w-full sm:w-2/4 md:w-1/3 h-full px-6 py-2 ">
       {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
       <div
         style={{
@@ -40,7 +41,14 @@ const Cards = ({ titel, body, img, height, width }: CardProps) => {
         })()}
         <div className="px-6 py-4 pb-6 ">
           <div className="font-bold text-3xl mb-2">{titel}</div>
-          <p className="text-grey-darker text-base">{body}</p>
+          <p
+            className="text-grey-darker text-base"
+            dangerouslySetInnerHTML={{
+              __html: body,
+            }}
+          >
+            {children}
+          </p>
         </div>
       </div>
       <p></p>
