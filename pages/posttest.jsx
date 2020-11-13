@@ -20,13 +20,13 @@ axios
   .get("/api/test")
   .then(function (response) {
     // handle success
-    console.log("正常に帰ってきまし");
+    //console.log("正常に帰ってきまし");
 
-    console.log(response.data.name);
+    //console.log(response.data.name);
   })
   .catch(function (error) {
     // handle error
-    console.log(error);
+    //console.log(error);
   })
   .then(function () {
     // always executed
@@ -54,9 +54,9 @@ class GetAppiData extends React.Component {
       .then(
         await function (response) {
           // handle success
-          console.log("正常に帰ってきまし");
+          //console.log("正常に帰ってきまし");
 
-          console.log(response.data.name);
+          //// console.log(response.data.name);
           // this.getaxios_value = "response.data.name";
           // return <p>response.data.name</p>;
           return "こんちゃあああああああああ";
@@ -64,7 +64,7 @@ class GetAppiData extends React.Component {
       )
       .catch(function (error) {
         // handle error
-        console.log(error);
+        //console.log(error);
       })
       .then(function () {
         // always executed
@@ -72,17 +72,17 @@ class GetAppiData extends React.Component {
   }
 
   getaxios() {
-    // console.log("取得しようとしています");
+    //// console.log("取得しようとしています");
     // axios
     //   .get("/api/test")
     //   .then(function (response) {
-    //     console.log("取得できました" + response.data.name);
+        //// console.log("取得できました" + response.data.name);
     //   })
     //   .catch(function (err) {
-    //     console.log(err);
+        //// console.log(err);
     //   })
     //   .then(function (err) {
-    //     console.log(err + " err ");
+        //// console.log(err + " err ");
     //   });
     this.setState((state) => ({
       getaxios_value: {
@@ -90,14 +90,14 @@ class GetAppiData extends React.Component {
           axios
             .get("/api/test")
             .then(function (response) {
-              console.log("取得できました" + response.data.name);
+              //console.log("取得できました" + response.data.name);
               return JSON.stringify(response.data.name);
             })
             .catch(function (err) {
-              console.log(err);
+              //console.log(err);
             })
             .then(function (err) {
-              console.log(err);
+              //console.log(err);
             });
         },
       },
@@ -105,7 +105,7 @@ class GetAppiData extends React.Component {
   }
 
   handleClick() {
-    console.log("クリックしたよ");
+    //console.log("クリックしたよ");
     this.setState((state) => ({
       isToggleOn: !state.isToggleOn,
     }));
@@ -143,14 +143,14 @@ const IndexPage = () => {
       .get("/api/test")
       .then(function (response) {
         // handle success
-        console.log("正常に帰ってきまし");
+        //console.log("正常に帰ってきまし");
 
-        console.log(response.data.name);
+        //console.log(response.data.name);
         return <p>response.data.name</p>;
       })
       .catch(function (error) {
         // handle error
-        console.log(error);
+        //console.log(error);
       })
       .then(function () {
         // always executed

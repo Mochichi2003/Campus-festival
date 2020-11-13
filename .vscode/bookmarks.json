@@ -28,15 +28,5 @@
 				"label": ""
 			}
 		]
-	},
-	{
-		"path": "$ROOTPATH$/components/PostList.jsx",
-		"bookmarks": [
-			{
-				"line": 7,
-				"column": 0,
-				"label": ""
-			}
-		]
 	}
 ]

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Style from "./style/PostList.module.sass";
-
 // import showpostsimg from "./ShowPostsImg";
 // import Image from "next/image";
 // import Debug from "debug";
@@ -26,7 +25,7 @@ const PostLIstWindow = (post) => {
       >
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
         <div
-          className="max-w-xs select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full border border-gray-400"
+          className=" select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full border border-gray-400"
           style={{
             height: "100%",
           }}
@@ -77,12 +76,10 @@ function ProjectNPost(post) {
           return <PostLIstWindow post={post.post} />;
         }
       })()}
-
       {/* <hr /> */}
     </>
   );
 }
-
 function Studentposts(post) {
   return (
     <>
@@ -92,13 +89,11 @@ function Studentposts(post) {
           return <PostLIstWindow post={post.post} />;
         }
       })()}
-
       {/* <hr /> */}
     </>
   );
 }
 // プロNとか諸々の選択をしたりタイトルを取得したりするところ
-
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
   return (

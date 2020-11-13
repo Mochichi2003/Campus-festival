@@ -32,14 +32,14 @@ class RemainingTime extends React.Component {
 
     debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
     if (this.eventDate.diff(dayjs()) < 3 * 60 * 60 * 1000 * -1) {
-      console.log("0秒以下になりました");
-      console.log(this.eventDate.diff(dayjs()));
+      // console.log("0秒以下になりました");
+      // console.log(this.eventDate.diff(dayjs()));
       return {
         end: true,
       }; // 終了したときはendがtrueになる
     } else if (this.eventDate.diff(dayjs()) < 0) {
-      console.log("0秒以下になりました");
-      console.log(this.eventDate.diff(dayjs()));
+      // console.log("0秒以下になりました");
+      // console.log(this.eventDate.diff(dayjs()));
       return {
         end: false,
         helding: true,
