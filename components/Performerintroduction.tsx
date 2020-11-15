@@ -28,7 +28,7 @@ const PerformerIntroduction = () => {
           width={1008}
         />
         <Cards
-          titel="アントラーズ"
+          titel="アントラーズ(バンド)"
           body=""
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (14).jpg"
           height={756}
@@ -49,7 +49,7 @@ const PerformerIntroduction = () => {
           width={1008}
         />
         <Cards
-          titel="セカンドペンギン"
+          titel="セカンドペンギン(バンド)"
           body=""
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (13).jpg"
           height={756}
