@@ -47,7 +47,7 @@ class RemainingTime extends React.Component {
     } else {
       return {
         times:
-          "残り" +
+          "" +
           Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
           "日" +
           Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
@@ -55,7 +55,7 @@ class RemainingTime extends React.Component {
           Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
           "分" +
           Math.floor((this.eventDate.diff(dayjs()) / 1000) % 60) +
-          "秒",
+          "秒後スタート",
         show: true,
       };
     }
@@ -72,7 +72,7 @@ class RemainingTime extends React.Component {
     } else if (this.nowtime().end) {
       return <div>終了しました</div>;
     } else {
-      return "まもなく始まります";
+      return "";
     }
   }
 
@@ -108,6 +108,20 @@ class RemainingTime extends React.Component {
           {this.state.insession}
         </h2>
         <p>{this.state.time}</p>
+        <div className="text-center">
+          <svg
+            className="animate-bounce w-12 rounded-full bg-white h-12 m-auto text-black mt-6 p-3"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+
         {/* <p>
           <svg
             className="animate-bounce  w-6 h-6 white"
@@ -135,13 +149,13 @@ export default function countdowntimer() {
         </Link> */}
       </div>
       <div className={styles.mainText}>
-        <h1
+        {/* <h1
           className={
             styles.topicon + " text-3xl sm:text-6xl font-sans  mt-0  font-bold"
           }
         >
           Yokohama campus festival
-        </h1>
+        </h1> */}
 
         <h2 className="sm:text-4xl text-2xl font-semibold ">
           <RemainingTime />

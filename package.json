@@ -27,6 +27,7 @@
     "highlightjs": "^9.16.2",
     "jquery": "^3.5.1",
     "marked": "^1.2.2",
+    "moveto": "^1.8.2",
     "next": "^10.0.0",
     "popper.js": "^1.16.1",
     "prismjs": "^1.22.0",
