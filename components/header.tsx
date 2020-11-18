@@ -17,7 +17,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
           style={{}}
           className={
             styles.header_background +
-            " flex items-center  w-screen flex-row  p-2  bg-opacity-90"
+            " flex items-center  w-screen flex-row  p-2  bg-opacity-90 "
           }
         >
           <Link href="/">
@@ -54,7 +54,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
             }
           >
             <Link href="/post">
-              <p>web展示</p>
+              <a>web展示</a>
             </Link>
           </div>
         </nav>

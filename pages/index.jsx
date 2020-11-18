@@ -38,6 +38,18 @@ const IndexPage = ({ posts, title, description }) => (
             web展示を見る
           </a>
         </Link>
+        <>
+          <Link href="/#performerintroduction">
+            <a className="bg-cornflowerblue-500 hover:bg-cornflowerblue-400 duration-100 w-full text-lg rounded-lg text-white p-4 m-8 mt-24">
+              出演者紹介
+            </a>
+          </Link>
+          <Link href="/#performerintroduction_iin">
+            <a className="bg-cornflowerblue-500 hover:bg-cornflowerblue-400 duration-100 w-full text-lg rounded-lg text-white p-4 m-8 mt-24">
+              キャンフェス実行委員紹介
+            </a>
+          </Link>
+        </>
       </div>
       {/* <h1
         className={

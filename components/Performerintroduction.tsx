@@ -10,7 +10,7 @@ import Cards from "./Cards";
 
 const PerformerIntroduction = () => {
   return (
-    <div>
+    <div id="performerintroduction">
       <h2 className="text-5xl font-semibold mb-8 mt-4">出演者紹介</h2>
       <div className=" sm:flex flex-row flex-wrap justify-start">
         <Cards
@@ -56,7 +56,7 @@ const PerformerIntroduction = () => {
           width={1008}
         />
       </div>
-      <div>
+      <div id="performerintroduction_iin">
         <h2 className="text-5xl font-semibold mb-8 mt-4">
           キャンフェス実行委員会紹介
         </h2>

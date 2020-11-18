@@ -16,6 +16,11 @@ const Index = ({ posts, title, description, ...props }) => {
       </h1>
       {/* <p className="description">{description}</p> */}
       <main>
+        <div>
+          <a href="/post#Post_lists_1" className="text-blue-400  ml-8">
+            生徒の作品集
+          </a>
+        </div>
         <PostList posts={posts} />
       </main>
     </Layout>

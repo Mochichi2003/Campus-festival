@@ -86,7 +86,9 @@ function Studentposts(post) {
       {/* {JSON.stringify(post.post.frontmatter)} */}
       {(() => {
         if (!post.post.frontmatter.proN) {
-          return <PostLIstWindow post={post.post} />;
+          return (
+            <PostLIstWindow id="postliset_studentposts" post={post.post} />
+          );
         }
       })()}
       {/* <hr /> */}
@@ -120,7 +122,10 @@ export default function PostList({ posts }) {
       </div>
       {/* 各生徒の投稿のところ */}
       <div>
-        <h1 className="text-3xl font-bold my-6 md:text-5xl px-8">
+        <h1
+          id="Post_lists_1"
+          className="text-3xl font-bold my-6 md:text-5xl px-8"
+        >
           生徒の作品集
         </h1>
         <p>{/* <pre className="break-all">{JSON.stringify(posts)}</pre> */}</p>
