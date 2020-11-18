@@ -112,7 +112,7 @@ class RemainingTime extends React.Component {
         </p>
         <div className="text-center">
           <svg
-            className="animate-bounce w-12 rounded-full bg-white h-12 m-auto text-black mt-6 p-3"
+            className="animate-bounce w-12 rounded-full bg-white h-12 m-auto text-black mt-6 p-3  "
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
