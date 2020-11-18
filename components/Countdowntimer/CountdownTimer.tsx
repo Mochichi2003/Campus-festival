@@ -107,7 +107,9 @@ class RemainingTime extends React.Component {
           {/* まもなく始まります */}
           {this.state.insession}
         </h2>
-        <p>{this.state.time}</p>
+        <p>
+          <span className="text-black bg-white">{this.state.time}</span>
+        </p>
         <div className="text-center">
           <svg
             className="animate-bounce w-12 rounded-full bg-white h-12 m-auto text-black mt-6 p-3"
