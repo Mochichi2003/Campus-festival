@@ -46,7 +46,7 @@ module.exports = {
       md: "16px",
       lg: "24px",
       xl: "48px",
-      header: "54px",
+      header: "61px",
       header_mini: "40px",
     },
     extend: {
