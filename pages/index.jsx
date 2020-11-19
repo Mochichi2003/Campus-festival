@@ -2,7 +2,7 @@
 import Head from "next/head";
 import React from "react";
 // import matter from "gray-matter";
-import Link from "next/link";
+// import Link from "next/link";
 // import style from "../style/index.module.sass";
 // import Postlist from "../components/PostList";
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
