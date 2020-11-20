@@ -56,7 +56,7 @@ const Layout = ({
               name="viewport"
               content="width=device-width,initial-scale=1"
             />
-            <meta name="description" content="No body" />
+            <meta name="description" content="N高横浜キャンパスフェス" />
             <meta
               property="og:url"
               content="https://campus-festival.vercel.app/"
