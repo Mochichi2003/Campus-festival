@@ -2,7 +2,7 @@
 title: "👑10月木曜プロN優秀作品👑"
 author: ""
 # url: "自分のページがあればここにURL入れてください"
-img: "/posts_icon/projectN/ProjectN.png"
+img: "/posts_icon/projectN/out.jpg"
 proN: true
 ---
 

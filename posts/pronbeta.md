@@ -2,7 +2,7 @@
 title: "プロジェクトNβ作品集"
 author: ""
 # url: "https://twitter.com/ajisaigohan"
-img: "/posts_icon/projectN/ProjectN.png"
+img: "/posts_icon/projectN/out.jpg"
 proN: true
 ---
 
