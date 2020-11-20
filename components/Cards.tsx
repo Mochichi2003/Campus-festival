@@ -24,7 +24,7 @@ const Cards = ({ titel, body, img, height, width, children }: CardProps) => {
               <Image
                 height={height}
                 width={width}
-                className="w-full  border-gray-700 "
+                className="w-full  ring-gray-700 "
                 src={img}
                 alt="Sunset in the mountains"
               />
@@ -32,7 +32,7 @@ const Cards = ({ titel, body, img, height, width, children }: CardProps) => {
           } else {
             return (
               <img
-                className="w-full  border-gray-700 "
+                className="w-full  ring-gray-700 "
                 src={img}
                 alt="Sunset in the mountains"
               />

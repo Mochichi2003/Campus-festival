@@ -6,5 +6,6 @@ img: "/posts_icon/projectN/ProjectN.png"
 syoukai: true
 ---
 
-# しょうかいするよーーーーーーーーーーーーーーーーーーーーーーー
+![](/Introduction/img/icons1.jpg)
 
+# しょうかいするよーーーーーーーーーーーーーーーーーーーーーーー

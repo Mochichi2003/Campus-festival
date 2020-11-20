@@ -14,42 +14,43 @@ module.exports = {
     "./pages/**/*.js",
   ],
   theme: {
-    maxHeight: {
-      "85vh": "85vh",
-      full: "100%",
-    },
-    scale: {
-      103: "1.03",
-      105: "1.05",
-      125: "1.25",
-    },
-
-    screens: {
-      sss: "400px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-    },
-    fontFamily: {
-      display: ["Gilroy", "sans-serif"],
-      body: ["Graphik", "sans-serif"],
-    },
-    borderWidth: {
-      default: "1px",
-      0: "0",
-      2: "2px",
-      4: "4px",
-    },
-    height: {
-      sm: "8px",
-      md: "16px",
-      lg: "24px",
-      xl: "48px",
-      header: "61px",
-      header_mini: "40px",
-    },
     extend: {
+      maxHeight: {
+        "85vh": "85vh",
+        full: "100%",
+      },
+      scale: {
+        103: "1.03",
+        105: "1.05",
+        125: "1.25",
+      },
+
+      screens: {
+        sss: "400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
+      fontFamily: {
+        display: ["Gilroy", "sans-serif"],
+        body: ["Graphik", "sans-serif"],
+      },
+
+      height: {
+        sm: "8px",
+        md: "16px",
+        lg: "24px",
+        xl: "48px",
+        header: "61px",
+        header_mini: "40px",
+      },
+      borderWidth: {
+        default: "1px",
+        0: "0",
+        2: "2px",
+        4: "4px",
+      },
       maxWidth: {
         1: "1rem",
         2: "2rem",

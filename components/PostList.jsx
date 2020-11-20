@@ -25,7 +25,7 @@ const PostLIstWindow = (post) => {
       >
         {/* かーど transition duration-150 ease-in-out transform hover:scale-125 bg-blue-500 text-white font-bold py-2 px-4 rounded */}
         <div
-          className=" select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full border border-gray-400"
+          className=" select-none   rounded overflow-hidden  hover:shadow-xl my-2 duration-300 transition cursor-pointer ease-in-out transform hover:scale-103 h-full ring-1 ring-gray-400"
           style={{
             height: "100%",
           }}
@@ -36,7 +36,7 @@ const PostLIstWindow = (post) => {
                 <img
                   width={600}
                   height={340}
-                  className="w-full  postImgs border-b-2 border-gray-700   border-opacity-75"
+                  className="w-full  postImgs ring-b-2 ring-gray-700   ring-opacity-75"
                   src={
                     post.post.frontmatter.img || "/performer_img/noimage.png"
                   }
@@ -48,7 +48,7 @@ const PostLIstWindow = (post) => {
           {/* <img
             width={600}
             height={340}
-            className="w-full  postImgs border-b-2 border-gray-700   border-opacity-75"
+            className="w-full  postImgs ring-b-2 ring-gray-700   ring-opacity-75"
             src={post.post.frontmatter.img || "/performer_img/noimage.png"}
             alt="Sunset in the mountains"
           /> */}
@@ -85,7 +85,7 @@ function Studentposts(post) {
     <>
       {/* {JSON.stringify(post.post.frontmatter)} */}
       {(() => {
-        if (!post.post.frontmatter.proN) {
+        if (!post.post.frontmatter.proN && !post.post.frontmatter.syoukai) {
           return (
             <PostLIstWindow id="postliset_studentposts" post={post.post} />
           );

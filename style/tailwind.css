@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .postlistContainer {
-  @apply flex flex-row flex-wrap justify-start;
+  @apply flex  flex-wrap justify-start;
 }
 
 .postImgs {
