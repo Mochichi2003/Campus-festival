@@ -8,6 +8,7 @@
   @apply flex flex-row flex-wrap justify-start;
 }
 
+
 .postImgs {
   max-height: 500px;
 }
