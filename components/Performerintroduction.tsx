@@ -14,43 +14,43 @@ const PerformerIntroduction = () => {
       <h2 className="text-5xl font-semibold mb-8 mt-4">出演者紹介</h2>
       <div className=" sm:flex flex-row flex-wrap justify-start">
         <Cards
-          titel="のど自慢"
-          body=""
+          titel="KasyU(のど自慢)"
+          body="七色の歌声でアツくなろう！"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (20).jpg"
           height={756}
           width={1008}
         />
         <Cards
           titel="ダンス"
-          body=""
+          body="1年生が魅せる本気のダンス"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (15).jpg"
           height={756}
           width={1008}
         />
         <Cards
           titel="アントラーズ(バンド)"
-          body=""
+          body="バンド演奏とダンスのコラボに注目！！特別ゲストも登場！？！？"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (14).jpg"
           height={756}
           width={1008}
         />
         <Cards
           titel="女装男装"
-          body=""
+          body="七人の見事な変化ご覧あれ"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (22).jpg"
           height={756}
           width={1008}
         />
         <Cards
           titel="スプラトゥーン大会"
-          body=""
+          body="予選を勝ち抜いた者たちのアツい決勝戦！"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (16).jpg"
           height={756}
           width={1008}
         />
         <Cards
           titel="セカンドペンギン(バンド)"
-          body=""
+          body="三年生が奏でるラストライブ"
           img="/Introduction/選択項目から作成したフォルダ 2/iOS の画像 (13).jpg"
           height={756}
           width={1008}

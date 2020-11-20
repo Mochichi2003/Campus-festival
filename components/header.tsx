@@ -56,7 +56,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
             }
           >
             <Link href="/post">
-              <a>web展示</a>
+              <a>展示</a>
             </Link>
           </div>
         </nav>
