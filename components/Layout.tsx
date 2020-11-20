@@ -69,7 +69,8 @@ const Layout = ({
             {/* <meta name="twitter:description" content="No body" /> */}
             <meta
               property="og:image"
-              content="https://campus-festival.vercel.app/ogp/キャンフェスロゴ完成版.jpg"
+              content="https://campus-festival.vercel.app/backgrondimg/10のコピー2.jpg"
+              // public/backgrondimg/10のコピー2.jpg
             />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@mochi_749" />
