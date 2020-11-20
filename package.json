@@ -16,6 +16,7 @@
     "@mdx-js/loader": "^1.6.19",
     "@next/mdx": "^10.0.0",
     "@types/debug": "^4.1.5",
+    "autoprefixer": "^10.0.2",
     "axios": "^0.21.0",
     "d3-array": "^2.8.0",
     "dayjs": "^1.8.36",
@@ -30,6 +31,7 @@
     "moveto": "^1.8.2",
     "next": "^10.0.0",
     "popper.js": "^1.16.1",
+    "postcss": "^8.1.8",
     "prismjs": "^1.22.0",
     "raw-loader": "^4.0.1",
     "react": "^16.12.0",
@@ -78,7 +80,7 @@
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "2.1.2",
-    "tailwindcss": "^1.8.10",
+    "tailwindcss": "^2.0.1",
     "typescript": "4.0"
   },
   "license": "MIT"
