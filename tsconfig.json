@@ -25,6 +25,6 @@
     "next.config.js",
     "pages/index.jsx",
     "pages/posttest.jsx",
-    "pages/api/test.js"
+    "pages/api/test.js", "pages/Introduction/tset.jsx"
   ]
 }
