@@ -42,15 +42,20 @@ const IndexPage = ({ posts, title, description }) => (
       <div className="  m-12 text-center">
         <div className="senni_Button">
           <Link href="/post">
-            <button href="/post" className="senni_Button_css ">
+            <button
+              href="/post"
+              className="senni_Button_css bg-blue-500 hover:bg-blue-400 duration-300"
+            >
               展示を見る
             </button>
           </Link>
           <Link href="/#performerintroduction">
-            <button className="senni_Button_css">出演者紹介</button>
+            <button className="bg-blue-500 hover:bg-blue-400 duration-300 ">
+              出演者紹介
+            </button>
           </Link>
           <Link href="/#performerintroduction_iin">
-            <button className="senni_Button_css">
+            <button className="bg-blue-500 hover:bg-blue-400 duration-300">
               キャンフェス実行委員紹介
             </button>
           </Link>

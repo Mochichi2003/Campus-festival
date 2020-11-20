@@ -8,9 +8,6 @@
   @apply flex flex-row flex-wrap justify-start;
 }
 
-.senni_Button_css {
-  @apply bg-blue-300;
-}
 .postImgs {
   max-height: 500px;
 }

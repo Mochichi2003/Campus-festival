@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import matter from "gray-matter";
-
+import Link from "next/link";
 // import Layout from "../components/Layout";
 
 const Index = ({ posts, title, description, ...props }) => {
@@ -17,9 +17,11 @@ const Index = ({ posts, title, description, ...props }) => {
       {/* <p className="description">{description}</p> */}
       <main>
         <div>
-          <a href="/post#Post_lists_1" className="text-blue-400  ml-8">
-            生徒の作品集
-          </a>
+          <Link href="/post#Post_lists_1">
+            <button className="p-2 text-white rounded  bg-blue-500 hover:bg-blue-400 duration-300  ml-8">
+              生徒の作品集
+            </button>
+          </Link>
         </div>
         <PostList posts={posts} />
       </main>
