@@ -103,12 +103,12 @@ class RemainingTime extends React.Component {
   render() {
     return (
       <>
-        <h2 className="sm:text-5xl  text-3xl font-semibold ">
+        <h2 className="sm:text-5xl  backdrop-filter-30 bg-white text-3xl font-semibold ">
           {/* まもなく始まります */}
           {this.state.insession}
         </h2>
         <p>
-          <span className="text-black bg-opacity-70 bg-white">
+          <span className="text-black  backdrop-filter-30 bg-white">
             「濱の呼吸 壱ノ型 情意投合」
             <br />
             {this.state.time}
@@ -116,7 +116,7 @@ class RemainingTime extends React.Component {
         </p>
         <div className="text-center">
           <svg
-            className="animate-bounce w-12 rounded-full bg-opacity-70 bg-white h-12 m-auto text-black mt-6 p-3  "
+            className="animate-bounce w-12 rounded-full  backdrop-filter-30 bg-white h-12 m-auto text-black mt-6 p-3  "
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"

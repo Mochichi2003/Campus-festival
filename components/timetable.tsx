@@ -9,7 +9,7 @@ import React from "react";
 // };
 
 const ListItem = () => (
-  <div className="ring-t">
+  <div className="border-t">
     <h3 className="text-4xl  font-bold my-8">タイムテーブル</h3>
     <div>
       {/* <table className="table-auto w-full mx-0 my-8 text-left">
@@ -51,7 +51,7 @@ const ListItem = () => (
       <img
         src="/timetable/タイムテーブル3.jpg"
         alt="タイムテーブル"
-        className="max-h-85vh ring m-auto"
+        className="max-h-85vh border m-auto"
       />
     </div>
   </div>

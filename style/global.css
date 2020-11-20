@@ -17,6 +17,9 @@ html {
   /* background: #000; */
   color: #fff;
 }
-.senni_Button button:hover{
+.senni_Button button:hover {
   /* background: rgb(36, 36, 36); */
+}
+.backdrop-filter-30 {
+  backdrop-filter: blur(30px);
 }
