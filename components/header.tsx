@@ -34,7 +34,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
               </svg>
               <p className="font-bold text-3xl hidden sss:block">
-                横浜CPキャンフェス
+                横浜キャンフェス
               </p>
             </div>
           </Link>
