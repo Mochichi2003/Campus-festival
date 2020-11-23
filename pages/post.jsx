@@ -30,6 +30,7 @@ const Index = ({ posts, title, description, ...props }) => {
 };
 
 export default Index;
+
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`);
 
