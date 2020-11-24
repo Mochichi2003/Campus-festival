@@ -33,7 +33,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
               </svg>
-              <p className="font-bold text-3xl hidden sss:block p-1">
+              <p className="font-bold text-3xl hidden sss:block p-1 ">
                 横浜キャンフェス
               </p>
             </div>
@@ -56,7 +56,11 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
             }
           >
             <Link href="/post">
-              <a>展示</a>
+              <a className="">
+                <span className="flex items-center text-2xl  font-semibold flex-row fill-current text-white">
+                  展示
+                </span>
+              </a>
             </Link>
           </div>
         </nav>
