@@ -9,7 +9,9 @@ import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
 import Performerintroduction from "../components/Performerintroduction";
+import YoutubeLive from "../components/YoutubeLive";
 // import Posetest from "../components/posetest";
+
 // import { type } from "os";
 // import Postdatas from "../components/postdatas";
 // type Props = { posts: any; title: any; description: any; props: any };
@@ -71,17 +73,7 @@ const IndexPage = ({ posts, title, description }) => (
       </h1> */}
       <div className="my-2 text-lg text-center	">
         <Timeteble />
-        <div className="movie-wrap">
-          <iframe
-            className=""
-            width="100%"
-            height="300"
-            src="https://www.youtube.com/embed/5qap5aO4i9A"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <YoutubeLive />
 
         <div>
           {/* <h3>ここに出演者の紹介文とかを乗せる</h3> */}

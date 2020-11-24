@@ -64,13 +64,13 @@ class RemainingTime extends React.Component {
   nowsession() {
     if (this.nowtime().helding) {
       return (
-        <div>
+        <>
           開催中
           {/* <div className={styles.arrows}></div> */}
-        </div>
+        </>
       );
     } else if (this.nowtime().end) {
-      return <div>終了しました</div>;
+      return <span>終了しました</span>;
     } else {
       return "";
     }
@@ -105,13 +105,13 @@ class RemainingTime extends React.Component {
       <>
         <h2 className="sm:text-5xl  backdrop-filter-30 bg-white text-3xl font-semibold ">
           {/* まもなく始まります */}
-          {this.state.insession}
+          {/* {this.state.insession} */}
         </h2>
         <p>
           <span className="text-black  backdrop-filter-30 bg-white">
             「濱の呼吸 壱ノ型 情意投合」
             <br />
-            {this.state.time}
+            {this.state.time || this.state.insession}
           </span>
         </p>
         <div className="text-center">
