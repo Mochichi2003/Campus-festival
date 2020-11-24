@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "DEBUG=dev:* next",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && next  export",
+    "start": "next serve out",
     "export": "next export",
     "server": " next build && next start",
     "deploy": "npm run build && npm run export",
@@ -40,6 +40,7 @@
     "react-pose": "^4.0.10",
     "recompose": "^0.30.0",
     "sass": "^1.26.11",
+    "serve": "^11.3.2",
     "three": "^0.122.0",
     "webpack": "^5.0.0"
   },
