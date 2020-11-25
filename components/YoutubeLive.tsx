@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
-import Image from "next/image";
+// import Image from "next/image";
 // import Link from "next/link";
 const debug = Debug("dev:time");
 
@@ -125,7 +125,7 @@ class RemainingTime extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 10);
+    this.timerID = setInterval(() => this.tick(), 1000);
   }
 
   componentWillUnmount() {
