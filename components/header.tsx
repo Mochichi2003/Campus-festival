@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 import styles from "./style/header.module.sass";
 // import { Navbar, Nav } from "react-bootstrap";
 
@@ -17,11 +17,19 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
           style={{}}
           className={
             styles.header_background +
-            " flex items-center  w-screen flex-row  p-2  bg-opacity-90 "
+            " flex items-center   flex-row w-screen p-2  bg-opacity-90 "
           }
         >
+          {/* <Link href="/"></Link> */}
           <Link href="/">
-            <div className="text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-xl px-2  py-0 m-0">
+            <div className="flex items-center   flex-row       text-white  rounded-lg  cursor-pointer duration-300 hover:text-white text-center  text-xl px-2  py-0 m-0">
+              <Image
+                src="/icon/yokohama2/android-chrome-512x512.png"
+                height={54}
+                width={54}
+                className="inline-block h-16"
+                alt=""
+              />
               <svg
                 className="fill-current sss:hidden text-white"
                 // style={
@@ -57,7 +65,7 @@ export default function header({ HasHeaderMargin, iswebPresentation }: Props) {
           >
             <Link href="/post">
               <a className="">
-                <span className="flex items-center text-2xl  font-semibold flex-row fill-current text-white">
+                <span className="flex items-center text-2xl  font-semibold flex-row fill-current ">
                   展示
                 </span>
               </a>

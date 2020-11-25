@@ -1,6 +1,6 @@
 import React from "react";
 import dayjs from "dayjs";
-
+import Image from "next/image";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
@@ -85,8 +85,9 @@ class RemainingTime extends React.Component {
       );
     } else {
       return (
-        <div className="movie-wrap bg-black relative ">
-          {/* <iframe
+        <>
+          <div className=" bg-black relative   ">
+            {/* <iframe
         className=""
         width="100%"
         height="300"
@@ -95,10 +96,21 @@ class RemainingTime extends React.Component {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe> */}
-          <div className="text-white text-4xl font-inter m-auto position-absolute h-4">
-            <p>Coming soon</p>
+            <div className="items-center text-center w-full">
+              <img
+                src="/icon/yokohama2/android-chrome-512x512.png"
+                height={512}
+                width={512}
+                className=" m-auto"
+                alt=""
+              />
+            </div>
+
+            <div className="text-white ">
+              <p>Coming soon</p>
+            </div>
           </div>
-        </div>
+        </>
       );
     }
   }
