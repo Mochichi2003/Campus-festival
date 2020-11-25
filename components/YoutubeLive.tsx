@@ -107,7 +107,7 @@ class RemainingTime extends React.Component {
             </div>
 
             <div className="text-white ">
-              <p>Coming soon</p>
+              <p className="py-8">Coming soon</p>
             </div>
           </div>
         </>
