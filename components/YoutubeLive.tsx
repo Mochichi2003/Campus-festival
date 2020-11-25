@@ -4,6 +4,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
+import Image from "next/image";
 // import Link from "next/link";
 const debug = Debug("dev:time");
 
@@ -86,7 +87,7 @@ class RemainingTime extends React.Component {
     } else {
       return (
         <>
-          <div className=" bg-black relative   ">
+          <div className=" movie-wrap bg-black relative  border border-gray-700 ">
             {/* <iframe
         className=""
         width="100%"
@@ -101,7 +102,7 @@ class RemainingTime extends React.Component {
                 src="/icon/yokohama2/android-chrome-512x512.png"
                 height={512}
                 width={512}
-                className=" m-auto"
+                className=" m-auto         sfdfaaaaaaaaaaaaaaaaaaaa"
                 alt=""
               />
             </div>
