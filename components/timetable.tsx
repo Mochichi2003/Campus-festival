@@ -1,7 +1,7 @@
 import React from "react";
 // import styles from "./style/timetable.module.scss";
 // import Link from "next/link";
-
+import Image from "next/image";
 // import { User } from "../interfaces";
 
 // type Props = {
@@ -48,15 +48,17 @@ const ListItem = () => (
 
     {/* 使う方 */}
     <div className="text-center my-4">
-      <img
+      <Image
         src="/timetable/タイムテーブル3.jpg"
         alt="タイムテーブル"
         loading="lazy"
         className="max-h-85vh border m-auto"
+        unsized={true}
       />
-      <img
+      <Image
         className="max-h-85vh border m-auto"
         src="/poster/キャンフェスポスター.jpg"
+        unsized={true}
         alt="ポスター"
         loading="lazy"
         // width={2897}

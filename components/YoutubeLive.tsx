@@ -1,6 +1,6 @@
 import React from "react";
 import dayjs from "dayjs";
-
+import Image from "next/image";
 import "dayjs/locale/ja";
 
 import Debug from "debug";
@@ -99,7 +99,11 @@ class RemainingTime extends React.Component {
       ></iframe> */}
             <div className="items-center text-center w-full">
               <img
-                src="/icon/yokohama2/android-chrome-512x512.png"
+                // unsized={true}
+                src="/icon/logo.png"
+                // style={{
+                //   maxHeight: "512px",
+                // }}
                 height={512}
                 width={512}
                 className=" m-auto         sfdfaaaaaaaaaaaaaaaaaaaa"

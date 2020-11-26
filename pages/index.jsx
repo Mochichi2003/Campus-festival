@@ -75,7 +75,7 @@ const IndexPage = ({ posts, title, description }) => (
       </h1> */}
       <div className="my-2 text-lg text-center	">
         <Timeteble />
-    
+
         <YoutubeLive />
 
         <div>
