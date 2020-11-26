@@ -98,7 +98,7 @@ class RemainingTime extends React.Component {
         allowFullScreen
       ></iframe> */}
             <div className="items-center text-center w-full">
-              <div className="m-auto max-w-512">
+              <div className="m-auto " style={{maxWidth: "512px"}}>
                 <Image
                   // unsized={true}
                   src="/icon/logo.png"
@@ -117,9 +117,7 @@ class RemainingTime extends React.Component {
               <p className="py-8">Coming soon</p>
             </div>
           </div>
-        </>
-      );
-    }
+        </    }
   }
 
   constructor(props: any) {
