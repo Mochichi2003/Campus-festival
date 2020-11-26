@@ -33,7 +33,7 @@ const PostLIstWindow = (post) => {
           {(() => {
             if (post.post.frontmatter.img) {
               return (
-                <Image
+                <img
                   // width={600}
                   // height={340}
                   unsized={true}

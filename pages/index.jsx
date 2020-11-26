@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 // import style from "../style/index.module.sass";
 // import Postlist from "../components/PostList";
-import Image from "next/image";
+// import Image from "next/image";
 
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";

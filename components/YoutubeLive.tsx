@@ -98,17 +98,19 @@ class RemainingTime extends React.Component {
         allowFullScreen
       ></iframe> */}
             <div className="items-center text-center w-full">
-              <img
-                // unsized={true}
-                src="/icon/logo.png"
-                // style={{
-                //   maxHeight: "512px",
-                // }}
-                height={512}
-                width={512}
-                className=" m-auto         sfdfaaaaaaaaaaaaaaaaaaaa"
-                alt=""
-              />
+              <div className="m-auto max-w-512">
+                <Image
+                  // unsized={true}
+                  src="/icon/logo.png"
+                  // style={{
+                  //   maxHeight: "512px",
+                  // }}
+                  height={512}
+                  width={512}
+                  className=" "
+                  alt=""
+                />
+              </div>
             </div>
 
             <div className="text-white ">
