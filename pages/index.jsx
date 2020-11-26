@@ -5,6 +5,8 @@ import React from "react";
 import Link from "next/link";
 // import style from "../style/index.module.sass";
 // import Postlist from "../components/PostList";
+import Image from "next/image";
+
 import CountdownTimer from "../components/Countdowntimer/CountdownTimer";
 import Layout from "../components/Layout";
 import Timeteble from "../components/timetable";
@@ -73,6 +75,7 @@ const IndexPage = ({ posts, title, description }) => (
       </h1> */}
       <div className="my-2 text-lg text-center	">
         <Timeteble />
+    
         <YoutubeLive />
 
         <div>

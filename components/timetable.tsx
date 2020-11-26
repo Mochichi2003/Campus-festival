@@ -51,7 +51,16 @@ const ListItem = () => (
       <img
         src="/timetable/タイムテーブル3.jpg"
         alt="タイムテーブル"
+        loading="lazy"
         className="max-h-85vh border m-auto"
+      />
+      <img
+        className="max-h-85vh border m-auto"
+        src="/poster/キャンフェスポスター.jpg"
+        alt="ポスター"
+        loading="lazy"
+        // width={2897}
+        // height={4096}
       />
     </div>
   </div>

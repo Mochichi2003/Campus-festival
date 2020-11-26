@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Style from "./style/PostList.module.sass";
 // import showpostsimg from "./ShowPostsImg";
-// import Image from "next/image";
+import Image from "next/image";
 // import Debug from "debug";
 // const debug = Debug("dev:Post_lists");
 const PostLIstWindow = (post) => {
@@ -33,9 +33,10 @@ const PostLIstWindow = (post) => {
           {(() => {
             if (post.post.frontmatter.img) {
               return (
-                <img
-                  width={600}
-                  height={340}
+                <Image
+                  // width={600}
+                  // height={340}
+                  unsized={true}
                   className="w-full  postImgs ring-b-2 ring-gray-700   ring-opacity-75"
                   src={
                     post.post.frontmatter.img || "/performer_img/noimage.png"

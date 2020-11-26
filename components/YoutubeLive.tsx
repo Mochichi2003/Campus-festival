@@ -87,7 +87,7 @@ class RemainingTime extends React.Component {
     } else {
       return (
         <>
-          <div className=" movie-wrap bg-black relative  border border-gray-700 ">
+          <div className="  bg-black relative  border border-gray-700 ">
             {/* <iframe
         className=""
         width="100%"
