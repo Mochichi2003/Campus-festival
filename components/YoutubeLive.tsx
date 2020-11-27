@@ -87,7 +87,7 @@ class RemainingTime extends React.Component {
     } else {
       return (
         <>
-          <div className="  bg-black relative  border border-gray-700 ">
+          <div className="  bg-black relative   ">
             {/* <iframe
         className=""
         width="100%"
@@ -114,7 +114,7 @@ class RemainingTime extends React.Component {
             </div>
 
             <div className="text-white ">
-              <p className="py-8">Coming soon</p>
+              <p className="py-8 font-inter text-5xl font-bold">Coming soon</p>
             </div>
           </div>
         </>
