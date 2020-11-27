@@ -3,5 +3,7 @@
     // "activityBar.background": "#845"
   },
   "todo-tree.tree.showBadges": false,
-  "todo-tree.tree.showCountsInTree": true
+  "todo-tree.tree.showCountsInTree": true,
+  "xd.lastPackage": "/Users/sutomoyuru/Docker/xd_desingn_sisytem/xd-design-system",
+  "xd.globalEditor": true
 }

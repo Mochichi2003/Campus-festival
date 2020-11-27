@@ -49,7 +49,7 @@ class RemainingTime extends React.Component {
         times:
           "" +
           Math.floor(this.eventDate.diff(dayjs()) / 1000 / 60 / 60 / 24) +
-          "日" +
+          "日と" +
           Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60 / 60) % 24) +
           "時間" +
           Math.floor((this.eventDate.diff(dayjs()) / 1000 / 60) % 60) +
@@ -148,7 +148,10 @@ class RemainingTime extends React.Component {
 
 export default function countdowntimer() {
   return (
-    <div className={styles.main + " "}>
+    <div
+      className={styles.main + " "}
+      style={{ backgroundImage: 'url("/backgrondimg/10のコピー2.jpg")' }}
+    >
       <div className="text-lg p-3">
         {/* <Link href="/">
           <a className=" duration-150 text-gray-200">戻る</a>

@@ -52,11 +52,11 @@ const ListItem = () => (
         src="/timetable/タイムテーブル3.jpg"
         alt="タイムテーブル"
         loading="lazy"
-        className="max-h-85vh border m-auto"
+        className="max-h-85vh sss:rounded sss:shadow my-8 m-auto"
         unsized={true}
       />
       <Image
-        className="max-h-85vh border m-auto"
+        className="max-h-85vh max-w-full sss:rounded sss:shadow my-8 m-auto"
         src="/poster/キャンフェスポスター.jpg"
         unsized={true}
         alt="ポスター"
