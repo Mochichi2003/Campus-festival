@@ -150,7 +150,7 @@ export default function countdowntimer() {
   return (
     <div
       className={styles.main + " "}
-      style={{ backgroundImage: 'url("/backgrondimg/10のコピー2.jpg")' }}
+      // style={{ backgroundImage: 'url("/backgrondimg/10のコピー2.jpg")' }}
     >
       <div className="text-lg p-3">
         {/* <Link href="/">
