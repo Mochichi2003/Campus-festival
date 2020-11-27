@@ -49,14 +49,14 @@ const ListItem = () => (
     {/* 使う方 */}
     <div className="text-center my-4">
       <Image
-        src="/timetable/タイムテーブル3.jpg"
+        src="/timetable/timetable_complete.png"
         alt="タイムテーブル"
         loading="lazy"
-        className="max-h-85vh sss:rounded sss:shadow my-8 m-auto"
+        className="max-h-85vh  sss:shadow my-8 m-auto"
         unsized={true}
       />
       <Image
-        className="max-h-85vh max-w-full sss:rounded sss:shadow my-8 m-auto"
+        className="max-h-85vh max-w-full  sss:shadow my-8 m-auto"
         src="/poster/キャンフェスポスター.jpg"
         unsized={true}
         alt="ポスター"

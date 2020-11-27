@@ -3,10 +3,10 @@ import dayjs from "dayjs";
 import Image from "next/image";
 import "dayjs/locale/ja";
 
-import Debug from "debug";
+// import Debug from "debug";
 // import Image from "next/image";
 // import Link from "next/link";
-const debug = Debug("dev:time");
+// const debug = Debug("dev:time");
 
 class RemainingTime extends React.Component {
   //  - []TODO  カウントダウンを表示するようにする
@@ -27,7 +27,7 @@ class RemainingTime extends React.Component {
     //   "YYYY-MM-DD HH:mm:ss.SSS"
     // );
 
-    debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
+    // debug(dayjs().format("残り DD日 hh時間mm分ss秒"));
     if (this.eventDate.diff(dayjs()) < 4 * 60 * 60 * 1000 * -1) {
       // キャンフェスが終わってから1時間が立ってからYoutubeLIVEを消す
       // console.log("0秒以下になりました");
