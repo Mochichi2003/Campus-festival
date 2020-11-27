@@ -18,7 +18,7 @@ const Index = ({ posts, title, description, ...props }) => {
       <main>
         <div>
           <Link href="/post#Post_lists_1">
-            <button className="p-2 text-white rounded  bg-blue-500 hover:bg-blue-400 duration-300  ml-8">
+            <button className="p-2 mt-8 text-white rounded  bg-blue-500 hover:bg-blue-400 duration-300  ml-8">
               生徒の作品集
             </button>
           </Link>
