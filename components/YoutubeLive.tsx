@@ -18,7 +18,7 @@ class RemainingTime extends React.Component {
   nowtime(): any {
     // 上は本番用
     this.eventDate = dayjs(
-      "2020-11-29 11:00:00.000", // キャンフェスが始まる1時間前にしてYoutubeLiveが早めに表示サれる様にした
+      "2020-11-28 11:00:00.000", // キャンフェスが始まる1時間前にしてYoutubeLiveが早めに表示サれる様にした
       "YYYY-MM-DD HH:mm:ss.SSS"
     );
     // 下はテスト用
@@ -58,7 +58,7 @@ class RemainingTime extends React.Component {
             <iframe
               width="1646"
               height="735"
-              src="https://www.youtube.com/embed/8zhaZ-Pbejo"
+              src="https://www.youtube.com/embed/oZ-EptlEdRg"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
