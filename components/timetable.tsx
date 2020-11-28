@@ -22,7 +22,7 @@ const ListItem = () => (
       />
       <Image
         className="max-h-85vh max-w-full  sss:shadow my-8 m-auto"
-        src="/poster/キャンフェスポスター.jpg"
+        src="/poster/キャンフェス new修正.jpg"
         unsized={true}
         alt="ポスター"
         loading="lazy"
