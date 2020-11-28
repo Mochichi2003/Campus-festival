@@ -108,7 +108,7 @@ class RemainingTime extends React.Component {
           {/* {this.state.insession} */}
         </h2>
         <p>
-          <span className="text-black  backdrop-filter-30 bg-white">
+          <span className="text-black  backdrop-filter-30 bg-white tabular-nums">
             「濱の呼吸 壱ノ型 情意投合」
             <br />
             {this.state.time || this.state.insession}

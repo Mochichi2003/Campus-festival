@@ -18,7 +18,7 @@ class RemainingTime extends React.Component {
   nowtime(): any {
     // 上は本番用
     this.eventDate = dayjs(
-      "2020-11-29 13:00:00.000", // キャンフェスが始まる1時間前にしてYoutubeLiveが早めに表示サれる様にした
+      "2020-11-28 18:00:00.000", // キャンフェスが始まる1時間前にしてYoutubeLiveが早めに表示サれる様にした
       "YYYY-MM-DD HH:mm:ss.SSS"
     );
     // 下はテスト用
@@ -52,9 +52,35 @@ class RemainingTime extends React.Component {
   nowsession() {
     if (this.nowtime().helding) {
       return (
-        <div>
-          <div className="movie-wrap bg-black relative ">
-            {/* 本番はここを変える */}
+        <>
+          <div className="  bg-black relative   ">
+            <div className="m-auto " style={{ maxWidth: "512px" }}>
+              <svg
+                height="256"
+                viewBox="0 -77 512.00213 512"
+                className="m-auto my-16 pt-16"
+                width="128"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                  fill="#f00"
+                />
+                <path
+                  d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+
+            <div className="text-white ">
+              <p className="py-8  text-3xl font-medium">
+                Youtube LIVE が始まりました事前に配布されているURLで御覧ください
+              </p>
+            </div>
+          </div>
+          {/* <div className="movie-wrap bg-black relative ">
+
 
             <svg
               height="128"
@@ -74,8 +100,8 @@ class RemainingTime extends React.Component {
             </svg>
             <p className="text-center text-white">始まりました</p>
           </div>
-          {/* <div className={styles.arrows}></div> */}
-        </div>
+          <div className={styles.arrows}></div> */}
+        </>
       );
     } else if (this.nowtime().end) {
       return (
@@ -98,15 +124,6 @@ class RemainingTime extends React.Component {
       return (
         <>
           <div className="  bg-black relative   ">
-            {/* <iframe
-        className=""
-        width="100%"
-        height="300"
-        src="https://www.youtube.com/embed/5qap5aO4i9A"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe> */}
             <div className="items-center text-center w-full">
               <div className="m-auto " style={{ maxWidth: "512px" }}>
                 <Image

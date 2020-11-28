@@ -164,7 +164,7 @@ const Layout = ({
               <div>
                 このサイトは&nbsp;
                 <span className="text-cornflowerblue-400">
-                  <a href="https://github.com/Mochichi2003">Mochi</a>
+                  <a href="https://github.com/Mochichi2003">須藤 萌</a>
                 </span>
                 が作りました
               </div>

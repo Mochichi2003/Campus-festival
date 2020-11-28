@@ -28,15 +28,5 @@
 				"label": ""
 			}
 		]
-	},
-	{
-		"path": "$ROOTPATH$/components/YoutubeLive.tsx",
-		"bookmarks": [
-			{
-				"line": 56,
-				"column": 19,
-				"label": ""
-			}
-		]
 	}
 ]
