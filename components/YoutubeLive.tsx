@@ -63,7 +63,7 @@ class RemainingTime extends React.Component {
             {/* aaaaaaa
              */}
             <div className="text-white ">
-              <p className="py-8 text-white text-3xl font-medium">
+              <p className="py-8 text-white  text-3xl font-medium">
                 Youtube LIVE が始まりました事前に配布されているURLで御覧ください
               </p>
             </div>
