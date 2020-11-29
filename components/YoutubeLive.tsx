@@ -60,7 +60,8 @@ class RemainingTime extends React.Component {
             >
               ここのリンクのフォームに答えて参加して下さい
             </a>
-
+            {/* aaaaaaa
+             */}
             <div className="text-white ">
               <p className="py-8  text-3xl font-medium">
                 Youtube LIVE が始まりました事前に配布されているURLで御覧ください
