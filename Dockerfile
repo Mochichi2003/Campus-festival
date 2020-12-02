@@ -5,5 +5,7 @@ WORKDIR /root/app/
 RUN apt-get update && apt-get install -y vim \
   curl \
   tmux \
-  time 
+  time \
+  fish \
+  zsh
 

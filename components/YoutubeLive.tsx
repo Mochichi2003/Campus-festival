@@ -54,6 +54,21 @@ class RemainingTime extends React.Component {
       return (
         <>
           <div className="  bg-black relative   py-16">
+            <div className="items-center text-center w-full">
+              <div className="m-auto " style={{ maxWidth: "512px" }}>
+                <Image
+                  // unsized={true}
+                  src="/icon/logo.png"
+                  // style={{
+                  //   maxHeight: "512px",
+                  // }}
+                  height={512}
+                  width={512}
+                  className=" "
+                  alt=""
+                />
+              </div>
+            </div>
             <a
               href="https://forms.gle/Xi2CtCywdyrFGhZbA"
               className="text-blue-500 underline my-16"
@@ -62,11 +77,7 @@ class RemainingTime extends React.Component {
             </a>
             {/* aaaaaaa
              */}
-            <div className="text-white ">
-              <p className="py-8 text-white  text-3xl font-medium">
-                Youtube LIVE が始まりました事前に配布されているURLで御覧ください
-              </p>
-            </div>
+            <div className="text-white "></div>
           </div>
           {/* <div className="movie-wrap bg-black relative ">
 
